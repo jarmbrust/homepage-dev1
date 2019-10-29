@@ -1,6 +1,9 @@
 {
   "name": "homepage-dev1",
   "version": "0.1.0",
+  "engines": {
+    "node": "v12.13.0"
+  },
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",

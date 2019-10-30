@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.statsheet {
+  background-color: #c6ccd3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.statsheet p {
+  margin: 10px 30px 20px 30px;
+}
+
+.div-inline {
+  display:inline-block;
+}
+
+.total-points {
+  padding-top: 10px;
+}
+
+.reset-button {
+  margin-top: 10px;
+}

@@ -55,7 +55,7 @@ class StatSheet extends Component {
     return ( 
       <div className="statsheet-background">
         <Table bordered hover>
-          <caption><p>A simple Dungeons and Dragons ability score point-buy calculator.</p></caption>
+          <caption>A simple Dungeons and Dragons ability score point-buy calculator</caption>
           <tbody>
           <tr>
             <th scope="col">Ability</th>

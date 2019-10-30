@@ -5,7 +5,7 @@ class AbilityScore extends Component {
   render() {
     return( 
       <span>
-        {this.getAbilityScore(this.props.score) } ({this.props.score})
+        {this.getAbilityScore(this.props.score) }
       </span>
     );
   }

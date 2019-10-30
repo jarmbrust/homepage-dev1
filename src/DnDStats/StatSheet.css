@@ -29,3 +29,18 @@
 .reset-button {
   margin-top: 10px;
 }
+
+table caption {
+  caption-side: top;
+}
+
+table {
+  table-layout: fixed;
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 20px;
+}

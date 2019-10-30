@@ -16,7 +16,7 @@ class StatSheet extends Component {
       con: 0,
       int: 0,
       wis: 0,
-      chr: 0,
+      chr: 0
     };
     this.renderDropdown = this.renderDropdown.bind(this);
     this.onClickHandler = this.onClickHandler.bind(this);
@@ -31,7 +31,7 @@ class StatSheet extends Component {
     const values = ['1', '2', '3', '4', '5', '7', '9'];
     const dropdownValues = values.map(val => <Dropdown.Item key={val} eventKey={val} onSelect={(stat) => this.onClickHandler(ability, stat)}>{val}</Dropdown.Item>);
     return (
-      <DropdownButton size="sm" id="dropdown-ability-score" title="Score" variant="secondary">
+      <DropdownButton size="sm" id="dropdown-ability-score" title="Points" variant="secondary">
         {dropdownValues}
       </DropdownButton>
     );
@@ -52,33 +52,57 @@ class StatSheet extends Component {
   render() {
     return ( 
       <div className="statsheet">
-        <p>This is a simple Dungeons and Dragons ability score point-buy calculator.</p>
-        <div>
-          <span className='str div-inline'>{this.renderDropdown('str')}</span>
-          <span> Strength: <AbilityScore score={this.state.str} /></span>
-        </div>
-        <div>
-          <span className='dex div-inline'>{this.renderDropdown('dex')}</span>
-          <span> Dexterity: <AbilityScore score={this.state.dex} /></span>
-        </div>
-        <div>
-          <span className='con div-inline'>{this.renderDropdown('con')}</span>
-          <span> Constitution: <AbilityScore score={this.state.con} /></span>
-        </div>
-        <div>
-          <span className='int div-inline'>{this.renderDropdown('int')}</span>
-          <span> Intelligence: <AbilityScore score={this.state.int} /></span>
-        </div>
-        <div>
-          <span className='wis div-inline'>{this.renderDropdown('wis')}</span>
-          <span> Wisdom: <AbilityScore score={this.state.wis} /></span>
-        </div>
-        <div>
-          <span className='chr div-inline'>{this.renderDropdown('chr')}</span>
-          <span> Charisma: <AbilityScore score={this.state.chr} /></span>
-        </div>
-        <div className='total-points'>Total Points Remaining: <AbilityScoreCalc stats={this.state} /></div>
-        <Button className='reset-button' variant="info" onClick={() => this.resetStats()}>Reset</Button>
+        <table>
+          <caption><p>This is a simple Dungeons and Dragons ability score point-buy calculator.</p></caption>
+          <tbody>
+          <tr>
+            <th scope="col">Ability</th>
+            <th scope="col">Select Points</th>
+            <th scope="col">Points Used</th>
+            <th scope="col">Score</th>
+          </tr>
+          <tr>
+            <td>Strength:</td>
+            <td className='str'>{this.renderDropdown('str')}</td>
+            <td>{this.state.str}</td>
+            <td><AbilityScore score={this.state.str} /></td>
+          </tr>
+          <tr>
+            <td>Dexterity:</td>
+            <td className='dex'>{this.renderDropdown('dex')}</td>
+            <td>{this.state.dex}</td>
+            <td><AbilityScore score={this.state.dex} /></td>
+          </tr>
+          <tr>
+            <td>Constitution:</td>
+            <td className='con'>{this.renderDropdown('con')}</td>
+            <td>{this.state.con}</td>
+            <td><AbilityScore score={this.state.con} /></td>
+          </tr>
+          <tr>
+            <td>Intelligence:</td>
+            <td className='int'>{this.renderDropdown('int')}</td>
+            <td>{this.state.int}</td>
+            <td><AbilityScore score={this.state.int} /></td>
+          </tr>
+          <tr>
+            <td>Wisdom:</td>
+            <td className='wis'>{this.renderDropdown('wis')}</td>
+            <td>{this.state.wis}</td>
+            <td><AbilityScore score={this.state.wis} /></td>
+          </tr>
+          <tr>
+            <td>Charisma:</td>
+            <td className='chr'>{this.renderDropdown('chr')}</td>
+            <td>{this.state.chr}</td>
+            <td><AbilityScore score={this.state.chr} /></td>
+          </tr>
+          <tr>
+            <td colSpan="3"><div className='total-points'>Total Points Remaining: <AbilityScoreCalc stats={this.state} /></div></td>
+            <td><Button className='reset-button' variant="info" onClick={() => this.resetStats()}>Reset</Button></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     );
   }

@@ -8,10 +8,12 @@ class Home extends Component {
       <div className="Home">
         <header className="App-header">
           <div className="intro-text">
-            <h3>Future home of jamesarmbrust.dev</h3>
+            <h3>Welcome to jamesarmbrust.dev!</h3>
             <br />
-            <p>Currently having issue with Heroku and NameCheap playing well together. Once I get that sorted out I'll have this site on the proper URL.</p>
-            <p>Until then it will be at this URL.</p>
+            <p>This site is only a few days old right now, so still a WIP, but stay tooned for more content!</p>
+            <p>For now, there are a few pages above of misc work and information about me.</p>
+            <br />
+            <p>The sourcecode for this site is located <a target="_blank" href="https://github.com/jarmbrust/homepage-dev1">here</a>.</p>
           </div>
         </header>
       </div>

@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import { Nav, Navbar } from 'react-bootstrap';
 import Home from './Home';
-// import DnDStats from './DnDStats';
 import GameOfLife from './GameOfLife';
 import NotFound from './NotFound';
 import Pets from './Pets/Pets';

@@ -4,7 +4,9 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Button from 'react-bootstrap/Button';
 import AbilityScoreCalc from './AbilityScoreCalc';
+import { Table } from 'react-bootstrap';
 import './StatSheet.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 class StatSheet extends Component {
   constructor(props) {
@@ -51,9 +53,9 @@ class StatSheet extends Component {
 
   render() {
     return ( 
-      <div className="statsheet">
-        <table>
-          <caption><p>This is a simple Dungeons and Dragons ability score point-buy calculator.</p></caption>
+      <div className="statsheet-background">
+        <Table bordered hover>
+          <caption><p>A simple Dungeons and Dragons ability score point-buy calculator.</p></caption>
           <tbody>
           <tr>
             <th scope="col">Ability</th>
@@ -102,7 +104,7 @@ class StatSheet extends Component {
             <td><Button className='reset-button' variant="info" onClick={() => this.resetStats()}>Reset</Button></td>
           </tr>
           </tbody>
-        </table>
+        </Table>
       </div>
     );
   }

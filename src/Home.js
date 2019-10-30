@@ -6,7 +6,6 @@ class Home extends Component {
   render() {
     return(
       <div className="Home">
-        <header className="App-header">
           <div className="intro-text">
             <h3>Welcome to jamesarmbrust.dev!</h3>
             <br />
@@ -15,7 +14,6 @@ class Home extends Component {
             <br />
             <p>The sourcecode for this site is located <a target="_blank" rel="noopener noreferrer" href="https://github.com/jarmbrust/homepage-dev1">here</a>.</p>
           </div>
-        </header>
       </div>
     );
   }

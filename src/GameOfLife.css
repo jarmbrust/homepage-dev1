@@ -1,9 +1,5 @@
-.intro-text {
-  margin: 0 20px 0 20px;
-}
-
-.Home {
-  background-color: #35383f;
+.life-background {
+  background-color: #35263d;
   display: flex;
   flex-direction: column;
   flex-grow: 1;

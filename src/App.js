@@ -11,9 +11,9 @@ import Home from './Home';
 // import DnDStats from './DnDStats';
 import GameOfLife from './GameOfLife';
 import NotFound from './NotFound';
-import Dogs from './Dogs';
-import Cats from './Cats';
+import Pets from './Pets/Pets';
 import DnDStats from './DnDStats/StatSheet';
+import About from './About';
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
@@ -26,16 +26,16 @@ function App() {
             <Nav.Link as={NavLink} to="/" exact>Home</Nav.Link>
             <Nav.Link as={NavLink} to="/dnd_stats">D&D Stats App</Nav.Link>
             <Nav.Link as={NavLink} to="/game_of_life">Game of Life</Nav.Link>
-            <Nav.Link as={NavLink} to="/dogs">Our Dogs</Nav.Link>
-            <Nav.Link as={NavLink} to="/cats">Our Cats</Nav.Link>
+            <Nav.Link as={NavLink} to="/pets">Our Pets</Nav.Link>
+            <Nav.Link as={NavLink} to="/about">About Me</Nav.Link>
           </Nav>
         </Navbar>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/dnd_stats" exact component={DnDStats} />
           <Route path="/game_of_life" exact component={GameOfLife} />
-          <Route path="/dogs" exact component={Dogs} />
-          <Route path="/cats" exact component={Cats} />
+          <Route path="/pets" exact component={Pets} />
+          <Route path="/about" exact component={About} />
           <Route component={NotFound} />
         </Switch>
       </div>

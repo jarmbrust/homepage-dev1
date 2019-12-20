@@ -2,9 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `About this site`
 
-This site replaces my old one that was written in Vue.js.  This version is written in React. My intent is not to play favorites; I just wanted to code it differently this time.
-
-As of this writing (the weee morning hours of 30-Oct-2019) it is only a few days old, so hopefully a lot more will be coming up.  For now though feel free to browse, check out my pet pics, and play around with any programs I have written.
+Basic personal website written in React.
+Will put more information here as it becomes relevant.
 
 
 ### `Plans thusfar`
@@ -14,6 +13,7 @@ As of this writing (the weee morning hours of 30-Oct-2019) it is only a few days
 - [ ] Blog
 - [ ] Dog and Cat Pics
 - [ ] Adventure Game
+- [ ] D&D realm (Oosular)
 - [ ] etc...
 
 

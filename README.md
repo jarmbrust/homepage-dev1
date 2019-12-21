@@ -11,7 +11,7 @@ Will put more information here as it becomes relevant.
 - [x] D&D stats page
 - [ ] [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 - [ ] Blog
-- [ ] Dog and Cat Pics
+- [x] Dogs and Cats (Pics soon)
 - [ ] Adventure Game
 - [ ] D&D realm (Oosular)
 - [ ] etc...

@@ -14,6 +14,7 @@ import Pets from './Pets/Pets';
 import DnDStats from './DnDStats/StatSheet';
 import About from './About';
 import "bootstrap/dist/css/bootstrap.css";
+import Oosular from './OosularRealm/Oosular';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/dnd_stats" exact component={DnDStats} />
           <Route path="/game_of_life" exact component={GameOfLife} />
           <Route path="/pets" exact component={Pets} />
+          <Route path="/oosular" exact component={Oosular} />
           <Route path="/about" exact component={About} />
           <Route component={NotFound} />
         </Switch>

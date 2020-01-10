@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Table, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Container, Col, Table, DropdownButton, Dropdown } from 'react-bootstrap';
 import './Oosular.scss';
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -48,8 +48,8 @@ class Oosular extends Component {
     return (
       <div className="oosular-background">
         <Container>
-          <Row sm={3}></Row>
-          <Row sm={6}>
+          {/* <Col></Col> */}
+          <Col>
             <br />
             <p>Brief intro to a fantasy Dungeons and Dragons game I am creating... currently a brain dump, but will fix it up and organize it!</p>
             <br />
@@ -59,7 +59,7 @@ class Oosular extends Component {
               <h2>Peoples and Races of the Continents of Rana</h2>
               <p>There are a diverse number of humanoids that live in the northern and southern continents of Rana...</p>
 
-              <DropdownButton id="race-dropdown-button" title="Select Race" caret color="primarya">
+              <DropdownButton id="race-dropdown-button" title="Select Race" caret="true" color="primary">
                 <Dropdown.Item onClick={this.onClickHandler}>Human</Dropdown.Item>
                 <Dropdown.Item onClick={this.onClickHandler}>Elf</Dropdown.Item>
                 <Dropdown.Item onClick={this.onClickHandler}>Dwarf</Dropdown.Item>
@@ -71,13 +71,13 @@ class Oosular extends Component {
                 <Dropdown.Item onClick={this.onClickHandler}>Yaun-Ti</Dropdown.Item>
               </DropdownButton>
 
-              <div  className='race-description'>{this.raceDescription(this.state.value)}</div>
+              <div className='race-description'>{this.raceDescription(this.state.value)}</div>
               <br />
               <p>* Indicates a race that for now is not available to players.</p>
               <br />
             </div>
-          </Row>
-          <Row sm={3}></Row>
+          </Col>
+          {/* <Col></Col> */}
         </Container>
       </div>
     );
@@ -153,7 +153,7 @@ class Oosular extends Component {
       <div>
         <h3>Tieflings</h3>
         <p><span style={{fontWeight: "bold"}}>Infernal/Abyssal</span>: All the stats and looks from the books.  Sometimes viewed with distrust, they are decedents with demonic or
-          infernal blood in their heritage. Many are decedents of the ancient city of Vurlang, which was giver over to corruption and destroyed
+          infernal blood in their heritage. Many are decedents of the ancient city of Vurlang, which was given over to corruption and destroyed
           long ago.</p>
         <p><span style={{fontWeight: "bold"}}>Bloodsworn</span>: Humans (usually) that have formed a direct pact with the forces of the abyss.  The have blood-red skin and solid black
           eyes.  Tieflings found out to be bloodsworn are almost always viewed with disdain.</p>
@@ -177,9 +177,17 @@ class Oosular extends Component {
     return(
       <div>
         <h3>Goblinoids</h3>
-        <p><span style={{fontWeight: "bold"}}>Hobgoblins</span>: </p>
-        <p><span style={{fontWeight: "bold"}}>Goblins*</span>: </p>
-        <p><span style={{fontWeight: "bold"}}>Bugbears*</span>: </p>
+        <p><span style={{fontWeight: "bold"}}>Hobgoblins</span>: Standing almost as tall as a human, with lean and strong builds,
+          yellowish/orange skin tones and dark hair, hobgoblins come from a violent and repressive culture.  Brutally raised
+          from childhood in the service of the hobgoblin empire, hobgoblins have a grim and determined outlook on life, and
+          live for conflict and strife.  Organize, brutal, and cunning, hobgoblins seek out challenge and battle to test 
+          themselves and their limits.  PC hobgoblins are either from a decimated outlining tribe, outcasts of the greater
+          empire, or soldiers of fortune seeking fame and infamy. Due to the way they were raised, hobgoblins are almost
+          always lawful and (almost) always evil.</p>
+        <p><span style={{fontWeight: "bold"}}>Goblins*</span>: Wiry, cunning, and mischievous (and have the ability to breed almost
+          like rabbits), goblins are viewed far and wide as dangerous pests. Rarely are they allowed in many of the more
+          civilized locals.</p>
+        <p><span style={{fontWeight: "bold"}}>Bugbears*</span>: Big, strong, and mean.</p>
       </div>
     )
   }
@@ -188,8 +196,12 @@ class Oosular extends Component {
     return(
       <div>
         <h3>Lizardfolk</h3>
-        <p><span style={{fontWeight: "bold"}}>Swampfolk</span>: </p>
-        <p><span style={{fontWeight: "bold"}}>Marshfolk</span>: </p>
+        <p><span style={{fontWeight: "bold"}}>Swampfolk</span>: Dark green scales and a colorful crest on the head identifies 
+          the swampfolk.  Generally xenophobic and hostile to outsiders, the tribes of the southern swamps usually keep to
+          themselves; and only making their presence known when someone invades their territory.</p>
+        <p><span style={{fontWeight: "bold"}}>Marshfolk</span>: More likely to trade with outsiders than their swamp-dwelling
+          cousins, the marshfolk are generally a more brownish-green in coloration, and have either an orange, yellow, or bright red
+          crest.</p>
       </div>
     )
   }
@@ -198,7 +210,9 @@ class Oosular extends Component {
     return(
       <div>
         <h3>Yaun-Ti</h3>
-        <p><span style={{fontWeight: "bold"}}>Pureblood</span>: </p>
+        <p><span style={{fontWeight: "bold"}}>Pureblood</span>: Decedents of those who worshiped an ancient snake cult, Most
+          yaun-ti hide their ancestry, living quietly among humans.  Some however embrace it and the reinsurance of the ancient
+          cults.</p>
       </div>
     )
   }

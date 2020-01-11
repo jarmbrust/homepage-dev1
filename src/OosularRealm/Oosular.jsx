@@ -48,7 +48,7 @@ class Oosular extends Component {
     return (
       <div className="oosular-background">
         <Container>
-          {/* <Col></Col> */}
+          <Col></Col>
           <Col>
             <br />
             <p>Brief intro to a fantasy Dungeons and Dragons game I am creating... currently a brain dump, but will fix it up and organize it!</p>
@@ -77,7 +77,7 @@ class Oosular extends Component {
               <br />
             </div>
           </Col>
-          {/* <Col></Col> */}
+          <Col></Col>
         </Container>
       </div>
     );

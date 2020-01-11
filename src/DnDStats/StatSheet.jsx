@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
-// import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-// import Button from 'react-bootstrap/Button';
 import AbilityScoreCalc from './AbilityScoreCalc';
 import { Table, Button, Dropdown } from 'semantic-ui-react'
 import './StatSheet.css';
-// import "bootstrap/dist/css/bootstrap.css";
 
 class StatSheet extends Component {
   constructor(props) {
@@ -26,12 +22,31 @@ class StatSheet extends Component {
   }
 
   onClickHandler(ability, stat) {
-    console.log('>', ability, stat, stat.value);
-    this.setState({ [ability]: stat.value });
+    this.setState({ [ability]: stat.target.innerText });
+  }
+
+  getValue(ability) {
+    switch(ability) {
+      case 'str':
+        return this.state.str;
+      case 'dex':
+        return this.state.dex;
+      case 'con':
+        return this.state.con;
+      case 'int':
+        return this.state.int;
+      case 'wis':
+        return this.state.wis;
+      case 'chr':
+        return this.state.chr;
+      default: 
+        return 0;
+    }
   }
 
   renderDropdown(ability) {
     const values = [
+      {key:'0', value:0, text:'0'},
       {key:'1', value:1, text:'1'},
       {key:'2', value:2, text:'2'},
       {key:'3', value:3, text:'3'},
@@ -40,34 +55,17 @@ class StatSheet extends Component {
       {key:'7', value:7, text:'7'},
       {key:'9', value:9, text:'9'},
     ];
-    // const dropdownValues2 = values.map(val => { text: val, value: val} );
-    // console.log('>', values, dropdownValues2);
-
-    // const dropdownValues = values.map(val => <div roll="combobox" class="ui search selection dropdown" key={val} text={val} onSelect={(stat) => this.onClickHandler(ability, stat)}>{val}</div>);
-    // console.log('>', values, dropdownValues);
+    let value = this.getValue(ability).toString();
     
-
     return (
-      // <Dropdown placeholder="0" id="dropdown-ability-score" title="Points" selection option={dropdownValues}>
-      //   {/* {dropdownValues} */}
-      // </Dropdown>
-
       <Dropdown 
         placeholder="0"
-        // fluid
-        // search
         selection
         options={values}
-        // onChange={() => console.log('>', ability, values[1]) }
-        // onChange={() => console.log('>', ability, value, values[1].value) }
-        onChange={this.onClickHandler}
-      > 
-
-      </Dropdown>
-
-
-
-    );
+        onChange={(e) => this.onClickHandler(ability, e)}
+        text={value}
+      /> 
+   );
   }
 
   resetStats() {

@@ -1,10 +1,11 @@
 .life-background {
-  background-color: #35263d;
+  background-color: #dcdee0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  min-height: 100vh;
 }

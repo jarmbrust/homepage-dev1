@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
 import AbilityScoreCalc from './AbilityScoreCalc';
-import { Table, Button, Dropdown } from 'semantic-ui-react'
+import { Table, Button, Dropdown } from 'semantic-ui-react';
 import './StatSheet.css';
 
 class StatSheet extends Component {

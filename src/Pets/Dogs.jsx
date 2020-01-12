@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
-// import "bootstrap/dist/css/bootstrap.css";
+import 'semantic-ui-css/semantic.min.css'
+import { Table } from 'semantic-ui-react'
 
 class Dogs extends Component {
 

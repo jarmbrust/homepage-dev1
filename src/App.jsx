@@ -39,26 +39,25 @@ function App() {
             </Menu.Item>
             
             <Menu.Item as={NavLink} to="/" exact>Home</Menu.Item>
-            <Menu.Item as={NavLink} to="/dnd_stats">D&D Stats</Menu.Item>
-            <Menu.Item as={NavLink} to="/game_of_life">Game of Life</Menu.Item>
             <Menu.Item as={NavLink} to="/pets">Pets</Menu.Item>
+            <Menu.Item as={NavLink} to="/game_of_life">Game of Life</Menu.Item>
             <Menu.Item as={NavLink} to="/about">About Me</Menu.Item>
 
-            <Dropdown item simple text='Dropdown'>
+            <Dropdown item simple text='D&D'>
               <Dropdown.Menu>
-                <Dropdown.Item>List Item</Dropdown.Item>
-                <Dropdown.Item>List Item</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Header>Header Item</Dropdown.Header>
+                <Dropdown.Item as={NavLink} to="/dnd_stats">D&D Stats Tool</Dropdown.Item>
+                <Dropdown.Item as={NavLink} to="/oosular">Oosular</Dropdown.Item>
+                {/* <Dropdown.Divider />
+                <Dropdown.Header>More Stuff</Dropdown.Header>
                 <Dropdown.Item>
                   <i className='dropdown icon' />
                   <span className='text'>Submenu</span>
                   <Dropdown.Menu>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
+                    <Dropdown.Item>Will go</Dropdown.Item>
+                    <Dropdown.Item>here</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown.Item>
-                <Dropdown.Item>List Item</Dropdown.Item>
+                <Dropdown.Item>blank</Dropdown.Item> */}
               </Dropdown.Menu>
             </Dropdown>
           </Container>

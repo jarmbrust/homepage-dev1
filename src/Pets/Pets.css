@@ -1,15 +1,23 @@
 .pets-background {
-  background-color: rgb(89, 159, 161);
+  background-color: #dcdee0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: left;
   font-size: calc(10px + 2vmin);
-  color: white;
   flex-grow: 1;
 }
 
 Table {
   background-color: white;
+}
+
+.cats {
+  margin-bottom: 30px;
+}
+
+.table-title {
+  color: black;
+  margin: 10px;
 }

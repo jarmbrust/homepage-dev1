@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Button from 'react-bootstrap/Button';
 import AbilityScoreCalc from './AbilityScoreCalc';
-import { Table } from 'react-bootstrap';
+import { Table, Button, Dropdown } from 'semantic-ui-react';
 import './StatSheet.css';
-import "bootstrap/dist/css/bootstrap.css";
 
 class StatSheet extends Component {
   constructor(props) {
@@ -26,17 +22,50 @@ class StatSheet extends Component {
   }
 
   onClickHandler(ability, stat) {
-    this.setState({ [ability]: stat });
+    this.setState({ [ability]: stat.target.innerText });
+  }
+
+  getValue(ability) {
+    switch(ability) {
+      case 'str':
+        return this.state.str;
+      case 'dex':
+        return this.state.dex;
+      case 'con':
+        return this.state.con;
+      case 'int':
+        return this.state.int;
+      case 'wis':
+        return this.state.wis;
+      case 'chr':
+        return this.state.chr;
+      default: 
+        return 0;
+    }
   }
 
   renderDropdown(ability) {
-    const values = ['1', '2', '3', '4', '5', '7', '9'];
-    const dropdownValues = values.map(val => <Dropdown.Item key={val} eventKey={val} onSelect={(stat) => this.onClickHandler(ability, stat)}>{val}</Dropdown.Item>);
+    const values = [
+      {key:'0', value:0, text:'0'},
+      {key:'1', value:1, text:'1'},
+      {key:'2', value:2, text:'2'},
+      {key:'3', value:3, text:'3'},
+      {key:'4', value:4, text:'4'},
+      {key:'5', value:5, text:'5'},
+      {key:'7', value:7, text:'7'},
+      {key:'9', value:9, text:'9'},
+    ];
+    let value = this.getValue(ability).toString();
+    
     return (
-      <DropdownButton size="sm" id="dropdown-ability-score" title="Points" variant="secondary">
-        {dropdownValues}
-      </DropdownButton>
-    );
+      <Dropdown 
+        placeholder="0"
+        selection
+        options={values}
+        onChange={(e) => this.onClickHandler(ability, e)}
+        text={value}
+      /> 
+   );
   }
 
   resetStats() {
@@ -54,7 +83,7 @@ class StatSheet extends Component {
   render() {
     return ( 
       <div className="statsheet-background">
-        <Table bordered hover>
+        <Table>
           <caption>A simple Dungeons and Dragons ability score point-buy calculator</caption>
           <tbody>
           <tr>

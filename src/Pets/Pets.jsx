@@ -10,6 +10,7 @@ class Pets extends Component {
         <h3>My wife and I have four dogs and two cats that rule over our house.</h3>
         <br />
         <Dogs />
+        <br />
         <Cats />
       </div>
     );

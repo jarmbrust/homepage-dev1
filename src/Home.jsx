@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Home.scss';
 import {
   Container,
   Col
@@ -15,7 +15,7 @@ class Home extends Component {
           <Col className="themed-container" fluid="sm">
             <h1>Welcome to JamesArmbrust.dev!</h1>
             <p>Hello.</p>
-            <p>This site is a work in progress, so hopefully you'll see more here soon! This is a test sentence to see about stuff.</p>
+            <p>This site is a work in progress, so hopefully you'll see more here soon!</p>
           </Col>
         </Container>
       </div>

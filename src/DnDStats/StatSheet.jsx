@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
 import AbilityScoreCalc from './AbilityScoreCalc';
-import { Table, Button, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, UncontrolledDropdown, ButtonDropdown  } from 'reactstrap';
+import { Table, Button, DropdownItem, DropdownToggle, DropdownMenu, UncontrolledButtonDropdown } from 'reactstrap';
 import './StatSheet.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,8 +16,7 @@ class StatSheet extends Component {
       int: 0,
       wis: 0,
       chr: 0,
-      dropdownOpen: false,
-      // value: "test"
+      dropdownOpen: false
     };
 
     this.renderDropdown = this.renderDropdown.bind(this);
@@ -41,7 +40,6 @@ class StatSheet extends Component {
   }
 
   onClickHandler(ability, stat) {
-    console.log('>>',ability, stat.target.innerText);
     this.setState({ [ability]: stat.target.innerText });
   }
 
@@ -77,69 +75,22 @@ class StatSheet extends Component {
     ];
     let value = this.getValue(ability).toString();
     return (
-      <ButtonDropdown   
-        isOpen={this.state.dropdownOpen} 
-        toggle={this.toggle}
-      >
-      <DropdownToggle caret onClick={(e) => this.onClickHandler(ability, e)}> 
-        {value}
-      </DropdownToggle>
+      <UncontrolledButtonDropdown>
+        <DropdownToggle caret >
+          {value}
+        </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem >
-            {values[0].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[1].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[2].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[3].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[4].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[5].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[6].value}
-          </DropdownItem>
-          <DropdownItem>
-            {values[7].value}
-          </DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[0].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[1].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[2].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[3].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[4].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[5].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[6].value}</DropdownItem>
+          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[7].value}</DropdownItem>
         </DropdownMenu>
-      </ButtonDropdown  >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const values = ['1', '2', '3', '4', '5', '7', '9'];
-//     const dropdownValues = values.map(val => <Dropdown.Item key={val} eventKey={val} onSelect={(stat) => this.onClickHandler(ability, stat)}>{val}</Dropdown.Item>);
-//     return (
-//       <ButtonDropdown size="sm" id="dropdown-ability-score" title="Points" variant="secondary">
-//         {dropdownValues}
-//       </ButtonDropdown>
+      </UncontrolledButtonDropdown>
     );
-   
   }
 
   resetStats() {

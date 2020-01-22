@@ -73,21 +73,16 @@ class StatSheet extends Component {
       {key:'7', value:7, text:'7'},
       {key:'9', value:9, text:'9'},
     ];
-    let value = this.getValue(ability).toString();
+    let abl = this.getValue(ability).toString();
     return (
       <UncontrolledButtonDropdown>
         <DropdownToggle caret >
-          {value}
+          {abl}
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[0].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[1].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[2].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[3].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[4].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[5].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[6].value}</DropdownItem>
-          <DropdownItem onClick={(stat) => this.onClickHandler(ability, stat)}>{values[7].value}</DropdownItem>
+          { values.map(val =>
+             <DropdownItem key={val.key} onClick={(val) => this.onClickHandler(ability, val)}>{val.value}</DropdownItem>
+          )}
         </DropdownMenu>
       </UncontrolledButtonDropdown>
     );

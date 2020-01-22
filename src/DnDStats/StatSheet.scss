@@ -5,17 +5,19 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  font-size: calc(10px + 2vmin);
+  font-size: 24px;
   color: black;
   flex-grow: 1;
-  padding: 20px;
-}
+  // padding: 20px;
+  min-height: 100vh;
 
-table caption {
-  caption-side: top;
-  padding: 20px;
-}
-
-Table {
-  background-color: white;
+  table {
+    background-color: white;
+    width: 70%;
+    
+    caption {
+      caption-side: top;
+      padding: 20px;
+    }
+  }
 }

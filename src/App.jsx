@@ -7,11 +7,11 @@ import {
   Switch
 } from "react-router-dom";
 import Home from './Home';
-import GameOfLife from './GameOfLife';
+import GameOfLife from './GameOfLife/GameOfLife';
 import NotFound from './NotFound';
 import Pets from './Pets/Pets';
 import DnDStats from './DnDStats/StatSheet';
-import About from './About';
+import About from './About/About';
 import Oosular from './OosularRealm/Oosular';
 import {
   Collapse,

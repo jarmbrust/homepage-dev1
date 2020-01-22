@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
 import AbilityScoreCalc from './AbilityScoreCalc';
 import { Table, Button, DropdownItem, DropdownToggle, DropdownMenu, UncontrolledButtonDropdown } from 'reactstrap';
-import './StatSheet.css';
+import './StatSheet.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class StatSheet extends Component {

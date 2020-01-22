@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import './Oosular.scss';
 import {
   Container,
-  Dropdown,
-  Table
-} from 'semantic-ui-react'
+  UncontrolledButtonDropdown,
+  DropdownToggle,
+  DropdownItem,
+  Table,
+  DropdownMenu
+} from 'reactstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Oosular extends Component {
   constructor(props) {
@@ -55,19 +59,22 @@ class Oosular extends Component {
             <h2>Peoples and Races of the Continents of Rana</h2>
             <p>There are a diverse number of humanoids that live in the northern and southern continents of Rana...</p>
 
-            <Dropdown id="race-dropdown" text="Select Race" pointing>
-              <Dropdown.Menu>
-                <Dropdown.Item onClick={this.onClickHandler}>Human</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Elf</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Dwarf</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Halfling</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Tiefling</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Orc</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Goblinoid</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Lizardfolk</Dropdown.Item>
-                <Dropdown.Item onClick={this.onClickHandler}>Yaun-Ti</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            <UncontrolledButtonDropdown id="race-dropdown" text="Select Race" pointing>
+              <DropdownToggle>
+                Select Race
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem onClick={this.onClickHandler}>Human</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Elf</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Dwarf</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Halfling</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Tiefling</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Orc</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Goblinoid</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Lizardfolk</DropdownItem>
+                <DropdownItem onClick={this.onClickHandler}>Yaun-Ti</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledButtonDropdown>
 
             <div className='race-description'>{this.raceDescription(this.state.value)}</div>
             <br />

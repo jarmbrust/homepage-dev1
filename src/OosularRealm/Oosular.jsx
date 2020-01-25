@@ -111,7 +111,8 @@ class Oosular extends Component {
         <p><span className="race-heading">Tarok</span>: A fair hair and skinned people who live in the northern portions of the northern continent. 
           They generally speak the North Ranan dialect and the traditional language of Taro. Most of the northern barbarians are 
           of the Tarok people, but not all Tarok are barbarians. A few have come to worship The Trinity due to Nokos missionaries, but many hold to a
-          form of traditional druidism they have had for as long as they can remember.</p>
+          form of traditional druidism they have had for as long as they can remember (scholars believe it may have been learned from the wood elves, but
+          the Tarok generally disagree vehemently with that theory).</p>
         <p><span className="race-heading">Ven</span>: A darker skinned people that originally came from the western sea and settled 
           in southern Rana. They speak in the South Ranan dialect and the language of the Ven, and brought with them a lunar-based religion where there are
           nine gods, one for each moon. Each is worshiped on their respective months.</p>
@@ -135,7 +136,7 @@ class Oosular extends Component {
           They are slim of build and seldom stand much over 5'.  Some trade and intermix with human communities, although many tribes (often coined "wild elves") take a more xenophobic 
           approach to outsiders and stay secluded in their forests.  They rarely tattoo themselves, but love elaborate semi-permanent body-paint worn by 
           both males and females.  They can live into their 3rd century and speak the wood elf dialect as well as some regional languages.
-          Culturally they don't revere any specific gods, but follow the teachings of their druids and shaman.</p>
+          Culturally they don't revere any specific gods, but follow the teachings of their druids.</p>
         <p><span className="race-heading">Half Elves</span>: Almost always of wood elf decent, they have a mixture of their parents' traits. 
           They are generally accepted in most human communities although their level of acceptance can vary widely amongst the elves. 
           High elf half-breeds are very rare (almost non-existent) and viewed as pariahs amongst the elves.  Half-elves don't really have a distinctive
@@ -305,8 +306,8 @@ class Oosular extends Component {
           emotions over time, becoming cold as the blood of the snakes themselves. They rarely ever form bonds, viewing others as tools to 
           manipulate in some fashion. As such, many eventually become neutral evil in outlook, but there are those who fight that compulsion.</p>
           <UncontrolledTooltip placement="right" target="yauntitooltip">
-            Since there is some overlap with Tieflings regarding how Yaun-Ti are laid out, I *may* not include them as a PC race. This
-            is still undecided as of this writing.
+            Since there is some overlap with Tieflings regarding how Yaun-Ti are laid out, I *may* not include them as a PC race. I'm
+            still undecided as of this writing.
           </UncontrolledTooltip>
       </div>
     );

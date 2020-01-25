@@ -38,17 +38,17 @@ class Moons extends Component {
           <tr>
             <td>Yovo</td>
             <td>42</td>
-            <td>Festival of Fertility (3rd), Holy Day of Sann (8th)</td>
+            <td>Festival of Fertility (3rd), Holy Day of Sann (8th), Blessings of the Trinity (Nokos religion, 40th)</td>
             <td></td>
           </tr>
           <tr>
             <td>Quess</td>
             <td>41</td>
-            <td>tbd</td>
+            <td>Day of the Dragons (21st), King Doroton's Birthday (Aeso, 29th)</td>
             <td></td>
           </tr>
           <tr>
-            <td>Mar</td>
+            <td>Marrado</td>
             <td>35</td>
             <td>tbd</td>
             <td></td>
@@ -66,7 +66,7 @@ class Moons extends Component {
             <td></td>
           </tr>
           <tr>
-            <td>Dasx</td>
+            <td>Dasca</td>
             <td>41</td>
             <td>tbd</td>
             <td></td>
@@ -85,8 +85,8 @@ class Moons extends Component {
           </tr>
           </tbody>
         </Table>
-        <p>Not everyone believes there exists a 10th moon, but many hold that it is a gateway to the Far Realms where the spirits 
-          of those who died throughout the year travel to their rest in the lands of Galuula.  Others hold that the 
+        <p>Not everyone believes there exists a 10th moon, but those that do hold that it is a gateway to the Far Realms where the spirits 
+          of those who died during the year travel to their rest in the lands of Galuula.  Others hold that the 
           day is simply a day where all the "normal" moons are far enough away from the world that their life-giving presence leaves all living
           creatures with a sense of unease.  Whatever the individual's belief, people of various cultures revere this day, which is often
           referred to as the Night of Souls.</p>

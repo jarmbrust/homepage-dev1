@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import AbilityScore from './AbilityScore';
 import AbilityScoreCalc from './AbilityScoreCalc';
-import { Table, Button, Dropdown } from 'semantic-ui-react';
-import './StatSheet.css';
+import { Table, Button, DropdownItem, DropdownToggle, DropdownMenu, UncontrolledButtonDropdown } from 'reactstrap';
+import './StatSheet.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class StatSheet extends Component {
   constructor(props) {
@@ -14,11 +15,28 @@ class StatSheet extends Component {
       con: 0,
       int: 0,
       wis: 0,
-      chr: 0
+      chr: 0,
+      dropdownOpen: false
     };
+
     this.renderDropdown = this.renderDropdown.bind(this);
     this.onClickHandler = this.onClickHandler.bind(this);
     this.resetStats = this.resetStats.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.select = this.select.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
+
+  select(event) {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+      value: event.target.innerText
+    });
   }
 
   onClickHandler(ability, stat) {
@@ -55,17 +73,19 @@ class StatSheet extends Component {
       {key:'7', value:7, text:'7'},
       {key:'9', value:9, text:'9'},
     ];
-    let value = this.getValue(ability).toString();
-    
+    let abl = this.getValue(ability).toString();
     return (
-      <Dropdown 
-        placeholder="0"
-        selection
-        options={values}
-        onChange={(e) => this.onClickHandler(ability, e)}
-        text={value}
-      /> 
-   );
+      <UncontrolledButtonDropdown>
+        <DropdownToggle caret >
+          {abl}
+        </DropdownToggle>
+        <DropdownMenu>
+          { values.map(val =>
+             <DropdownItem key={val.key} onClick={(val) => this.onClickHandler(ability, val)}>{val.value}</DropdownItem>
+          )}
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
+    );
   }
 
   resetStats() {

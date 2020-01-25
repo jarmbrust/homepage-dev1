@@ -1,5 +1,5 @@
 .oosular-background {
-    background-color: #dcdee0;
+    // background-color: #dcdee0;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -20,8 +20,11 @@
       font-size: 24px;
       text-decoration: underline;
     }
-    Table {
-      background-color: white;
+    .table-moon {
+      border-radius: 6px 6px 6px 6px;
+      -moz-border-radius: 6px 6px 6px 6px;
+      -webkit-border-radius: 6px 6px 6px 6px;
+      border-collapse: separate;
     }
     #race-dropdown {
       margin-bottom: 10px;

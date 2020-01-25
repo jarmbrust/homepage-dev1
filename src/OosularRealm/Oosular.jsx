@@ -5,12 +5,13 @@ import {
   UncontrolledButtonDropdown,
   DropdownToggle,
   DropdownItem,
-  Table,
   DropdownMenu,
   UncontrolledTooltip
 } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Map from '../Images/North_Rana__Oosular.png'; 
+import Map from '../Images/North_Rana__Oosular.png';
+import Moons from './Moons'
+import NorthRanaMap from './NorthRanaMap'
 
 
 class Oosular extends Component {
@@ -52,6 +53,7 @@ class Oosular extends Component {
   }
 
   render() {
+    const pcRaces = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Goblinoid', 'Lizardfolk', 'Yaun-Ti', 'Orc']
     return (
       <div className="oosular-background">
       <Container>
@@ -59,6 +61,7 @@ class Oosular extends Component {
           <h1 className="title">The Lands of Oosular</h1>
           <p>Map of the western portion of the continent of North Rana.</p>
           <img src={Map} alt="Oosular Map, North Rana" width="710.5" height="408.5"></img>
+          <NorthRanaMap />
           <br />
           <Moons />
           <div>
@@ -70,15 +73,9 @@ class Oosular extends Component {
                 Select Race
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem onClick={this.onClickHandler}>Human</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Elf</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Dwarf</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Halfling</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Tiefling</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Orc</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Goblinoid</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Lizardfolk</DropdownItem>
-                <DropdownItem onClick={this.onClickHandler}>Yaun-Ti</DropdownItem>
+                { pcRaces.map(race =>
+                  <DropdownItem key={race} onClick={this.onClickHandler}>{race}</DropdownItem>
+                )}
               </DropdownMenu>
             </UncontrolledButtonDropdown>
 
@@ -207,12 +204,17 @@ class Oosular extends Component {
       <div>
         <h3>Orcs</h3>
         <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="orctooltip">Orcs</span>: Orc culture 
-          is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate the north and northeastern portions of the North Rana.
+          is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate the northwestern part of continent of Zosan,
+          which is found to the east of North and South Rana.
         </p>
-        <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="orctooltip">Half-Orcs</span>: Decedents of humans who have interbred or been interbred with orcs.</p>
+        <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="halforctooltip">Half-Orcs</span>: Decedents of humans who have interbred or been interbred with orcs.</p>
         <UncontrolledTooltip placement="right" target="orctooltip">
-          Orcs and Half orcs are on the fence as to if they will be even in this area of the world, and of course if they will be allowed as
-          PC's if they do exist.  I will fill out more info on them if I decide to incorporate them.
+          Orcs and Half orcs are not in this portion of the world, they are farther to the East, and as such I have not yet fleshed them out, nor
+          will they be open to use as PC's as of this writing... although that could change.
+        </UncontrolledTooltip>
+        <UncontrolledTooltip placement="right" target="halforctooltip">
+          See orc tooltip above.  Plus, if orcs are allowed as PC's then chances that half-orcs will exist as a race are slim since it would be
+          somewhat redundant.
         </UncontrolledTooltip>
       </div>
     );
@@ -230,28 +232,33 @@ class Oosular extends Component {
           into them as children.  Organized, brutal, and cunning, hobgoblins seek out challenge and battle to test 
           themselves and their limits.  Hobgoblins worship their god-emperor who has ruled them for over 400 years. All other religion 
           is forbidden and they seek to bring all peoples under the dominion of the emperor.</p>
-          <p>PC hobgoblins are either from a decimated and disgraced legion, outcasts of the
-            empire, or soldiers of fortune seeking fame and infamy. Due to the way they were raised, hobgoblins are pretty much
-            always lawful and (almost) always evil.</p>
+        <p>PC hobgoblins are either from a decimated and disgraced legion, outcasts of the
+          empire, or soldiers of fortune seeking fame and infamy. Due to the way they were raised, hobgoblins are pretty much
+          always lawful and (almost) always evil.
+        </p>
         <p><span className="race-heading">Goblins</span>:&nbsp;
-          Wiry, cunning, and mischievous (and have the ability to breed almost like rabbits), goblins are viewed far and wide as cunning
+          Wiry, cunning, and mischievous (with the ability to breed almost like rabbits), goblins are viewed far and wide as cunning
           and dangerous pests. Rarely are they allowed in many of the more
           civilized locals, and when they are they are often watched like hawks. It is not uncommon for more remote townships to offer bounties
           for goblin kills (usually they accept pairs of ears as proof of kill).  Goblins can be found in almost any local, and are often raised
-          in warren-like lairs where the largest and strongest bully the smaller and make the rules. Children are many times kept in cages or pens 
-          until they are old enough to be useful and fend for themselves.</p>
-          <p>PC goblins are rare and often have trouble getting into many of the smaller civilized places. In bigger cities can usually blend 
-            into the crowd and often are not harassed... much.  Goblins don't really have gods, although some revere the hobgoblin emperor.
-          </p>
+          in warren-like lairs where the largest and strongest bully and torment the smaller ones.  Children are often kept in cages or pens 
+          until they are old enough to be useful and fend for themselves.  In rare warrens goblins can have a more egalitarian tribalism, and those
+          goblins are most likely to have non-evil members.  But such lairs are rare and are generally unknown to all but the most learned goblin
+          scholars. Goblins raised in the empire follow the hobgoblin god-emperor, other "wild goblins" usually follow a loose form of dark shamanism
+          based around appeasing and enslaving evil spirits.</p>
+        <p>PC goblins are rare and often have trouble getting into many civilized places. Sometimes in bigger cities they can blend 
+          into the crowd and therefore are often are not harassed... much.  But, generally they will have to get used to always being suspect.
+        </p>
         <p><span className="race-heading">Bugbears</span>:&nbsp;
-          Standing from 6 to 8 feet tall, bugbears are Big, strong, and mean. Ambush predators and raiders, bugbears are found in small groups or
+          Standing from 6 to 8 feet tall, bugbears are big, strong, and mean. Ambush predators and raiders, bugbears are found in small groups or
           hired out as muscle for other races.  Bugbears don't form much in the way of family attachments, and children are cared for by their 
-          mothers until they can fend for themselves -- then abandoned at a young age.  Occasionally they are bred and trained as shock troops
-          by hobgoblins, when their chaotic nature can be suppressed, or sometimes harnessed for effect.</p>
-          <p>PC bugbears have some of the same issues as goblins getting into civilized places usually because of their reputation as marauders and
-            chaotic killers.  But often they can hire themselves out as muscle or mercenaries. Like goblins they don't really have gods, but do sometimes
-            have a form of ancestor worship.
-          </p>
+          mothers until they are abandoned as soon as they can fend for themselves.  Occasionally they are bred and trained as shock troops
+          by hobgoblins, when their chaotic nature can be suppressed or harnessed for effect.</p>
+        <p>PC bugbears have some of the same issues as goblins getting into civilized places usually because of their reputation as marauders and
+          chaotic killers.  Often thought they can hire themselves out as muscle, bodyguards, or mercenaries.  Bugbears don't have much in the way
+          of gods. Most out in the world live in small groups and don't bother with such things.  Those that live amongst other races
+          sometimes adopt their gods, but only in so far as they are useful to the bugbear, otherwise, again, they don't bother.
+        </p>
       </div>
     );
   }
@@ -287,108 +294,26 @@ class Oosular extends Component {
     return(
       <div>
         <h3>Yaun-Ti</h3>
-        <p><span className="race-heading">Pureblood</span>: Believed decedents of those who worshiped, or were otherwise infused with the 
-          powers of ancient snake cults.  Purebloods can be born to two otherwise normal looking humans, and as children show few signs 
+        <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="yauntitooltip">Pureblood</span>: Believed 
+          decedents of those who worshiped, or were otherwise infused with the powers of ancient snake cults. This taint in the human
+          bloodlines goes back farther than recorded history. Purebloods can be born to two otherwise normal looking humans, and as children show few signs 
           of what they are to become. Most who discover their ancestry take great pains to hide it,
           using makeup or minor magic glamors to obscure what few features might appear (which are often snake-like eyes, faint patches of scales and 
-          odd colorations). Many times they are rejected by their family and persecuted by society at large when discovered. 
+          odd colorations and sometimes baldness). Many times they are rejected by their family and persecuted by society at large when discovered. 
           This can lead to many purebloods embracing their heritage and seeking out the secret 
           societies and snake cults that are believed to exist even to this day.  Purebloods, regardless of their intentions, generally loose their 
           emotions over time, becoming cold as the blood of the snakes themselves. They rarely ever form bonds, viewing others as tools to 
           manipulate in some fashion. As such, many eventually become neutral evil in outlook, but there are those who fight that compulsion.</p>
+          <UncontrolledTooltip placement="right" target="yauntitooltip">
+            Since there is some overlap with Tieflings regarding how Yaun-Ti are laid out, I *may* not include them as a PC race. This
+            is still undecided as of this writing.
+          </UncontrolledTooltip>
       </div>
     );
   }
 }
 
-class Moons extends Component {
-  render() {
-    return (
-      <>
-        <p>The world of Oosular has nine small moons.  The corresponding nine months of the year are determined by which moon is closest to the 
-          planet during that time.  Each month is about 40 days long, and the year is 361 days long.  The last day is the annual Day of Darkness, 
-          where some believe the mysterious black 10th moon is closest to the world and the veil between death and life is at its thinnest. 
-          This is considered the last day of the year, and a day that the spirits of the dead freely walk the world.</p>
-        <Table bordered hover>
-          <caption>The Nine Lunar Months (+1 day)</caption>
-          <tbody>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Days</th>
-            <th scope="col">Major Holidays</th>
-            <th scope="col">???</th>
-          </tr>
-          <tr>
-            <td>Ous</td>
-            <td>40</td>
-            <td>Day of Rebirth (1st), Feast of the New Year (12th)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Darnu</td>
-            <td>37</td>
-            <td>Lover's Day (6th), The founding of Aeso (18th, Aeso only), The Fall of Gondus (35th)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Yovo</td>
-            <td>42</td>
-            <td>Festival of Fertility (3rd), Holy Day of Sann (8th)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Quess</td>
-            <td>41</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Mar</td>
-            <td>35</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Taque</td>
-            <td>43</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Satoro</td>
-            <td>41</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Dasx</td>
-            <td>41</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Mok</td>
-            <td>40</td>
-            <td>tbd</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Galuula</td>
-            <td>1</td>
-            <td>Day of Darkness, Night of Souls</td>
-            <td></td>
-          </tr>
-          </tbody>
-        </Table>
-        <p>Not everyone believes there exists a 10th moon, but many hold that it is a gateway to the Far Realms where the spirits 
-          of those who died throughout the year travel to their rest in the lands of Galuula.  Others hold that the 
-          day is simply a day where all the "normal" moons are far enough away from the world that their life-giving presence leaves all living
-          creatures with a sense of unease.  Whatever the individual's belief, people of various cultures revere this day, which is often
-          referred to as the Night of Souls.</p>
-      </>
-    );
-  }
-} 
+
 
 
 

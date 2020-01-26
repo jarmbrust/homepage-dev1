@@ -1,5 +1,4 @@
 .oosular-background {
-    background-color: #dcdee0;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -20,8 +19,11 @@
       font-size: 24px;
       text-decoration: underline;
     }
-    Table {
-      background-color: white;
+    .table-moon {
+      border-radius: 6px 6px 6px 6px;
+      -moz-border-radius: 6px 6px 6px 6px;
+      -webkit-border-radius: 6px 6px 6px 6px;
+      border-collapse: separate;
     }
     #race-dropdown {
       margin-bottom: 10px;
@@ -43,7 +45,7 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 400px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -72,3 +74,59 @@
   font-size: 19px;
 }
   
+
+
+/*
+ * Sidebar
+ */
+ .sidebar {
+  position: fixed;
+  top: 10px;
+  bottom: 0;
+  left: 1px;
+  // z-index: 100; /* Behind the navbar */
+  
+  margin-top: 48px;
+  padding-right: 100px;
+  // box-shadow: inset -10px 0 0 rgba(0, 0, 0, .1);
+  // border-right: thin solid rgba(0, 0, 0, .1);
+  
+
+  .nav-link {
+    font-weight: 500;
+    // color: #333;
+    // margin-top: 48px;
+
+
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .nav-link.active {
+    color: #007bff;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: inherit;
+  }
+}
+
+.sidebar2 {
+  padding-right: 10px;
+  // box-shadow: inset -2px 0 0 rgba(0, 0, 0, .1);
+  border-right: 2px solid rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: sticky;
+  // top: 48px; /* Height of navbar */
+  // height: calc(100vh - 48px);
+  // padding-top: .5rem;
+  overflow-x: hidden;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}

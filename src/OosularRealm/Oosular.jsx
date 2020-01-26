@@ -229,10 +229,9 @@ class Oosular extends Component {
           yellowish/orange skin tones and dark hair, hobgoblins come from a violent and repressive culture.  Brutally raised
           from childhood in the service of the hobgoblin empire of Toulk and it's semi-divine emperor, hobgoblins have 
           a grim and determined outlook on life.  Their culture teaches that conflict and strife are the crucible that
-          forges the ultimate hobgoblin warrior, and they have this credo beaten
-          into them as children.  Organized, brutal, and cunning, hobgoblins seek out challenge and battle to test 
-          themselves and their limits.  Hobgoblins worship their god-emperor who has ruled them for over 400 years. All other religion 
-          is forbidden and they seek to bring all peoples under the dominion of the emperor.</p>
+          forges the ultimate hobgoblin warrior, and they have this credo beaten into them as children.  Organized, brutal, and cunning, 
+          hobgoblins seek out challenge and battle to test themselves and their limits.  Hobgoblins worship their god-emperor who is said to have 
+          ruled them for over 400 years. All other religion is forbidden and they seek to bring all peoples under the dominion of the emperor.</p>
         <p>PC hobgoblins are either from a decimated and disgraced legion, outcasts of the
           empire, or soldiers of fortune seeking fame and infamy. Due to the way they were raised, hobgoblins are pretty much
           always lawful and (almost) always evil.
@@ -243,8 +242,8 @@ class Oosular extends Component {
           civilized locals, and when they are they are often watched like hawks. It is not uncommon for more remote townships to offer bounties
           for goblin kills (usually they accept pairs of ears as proof of kill).  Goblins can be found in almost any local, and are often raised
           in warren-like lairs where the largest and strongest bully and torment the smaller ones.  Children are often kept in cages or pens 
-          until they are old enough to be useful and fend for themselves.  In rare warrens goblins can have a more egalitarian tribalism, and those
-          goblins are most likely to have non-evil members.  But such lairs are rare and are generally unknown to all but the most learned goblin
+          until they are old enough to be useful and fend for themselves.  There are said to be a few goblin warrens that have a more traditional tribalism, and those
+          goblins are most likely to have non-evil members.  But such lairs are very rare and are generally unknown to all but the most learned goblin
           scholars. Goblins raised in the empire follow the hobgoblin god-emperor, other "wild goblins" usually follow a loose form of dark shamanism
           based around appeasing and enslaving evil spirits.</p>
         <p>PC goblins are rare and often have trouble getting into many civilized places. Sometimes in bigger cities they can blend 
@@ -256,7 +255,7 @@ class Oosular extends Component {
           mothers until they are abandoned as soon as they can fend for themselves.  Occasionally they are bred and trained as shock troops
           by hobgoblins, when their chaotic nature can be suppressed or harnessed for effect.</p>
         <p>PC bugbears have some of the same issues as goblins getting into civilized places usually because of their reputation as marauders and
-          chaotic killers.  Often thought they can hire themselves out as muscle, bodyguards, or mercenaries.  Bugbears don't have much in the way
+          chaotic killers.  Often though they can hire themselves out as muscle, bodyguards, or mercenaries.  Bugbears don't have much in the way
           of gods. Most out in the world live in small groups and don't bother with such things.  Those that live amongst other races
           sometimes adopt their gods, but only in so far as they are useful to the bugbear, otherwise, again, they don't bother.
         </p>

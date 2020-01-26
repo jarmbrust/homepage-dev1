@@ -10,7 +10,6 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Map from '../Images/North_Rana__Oosular.png';
 
-
 const NorthRanaMap = () => {
 
   const [modal, setModal] = useState(false);

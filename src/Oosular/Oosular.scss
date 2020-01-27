@@ -4,6 +4,7 @@
     text-align: left;
     font-size: 16px;
     color: black;
+
     caption {
       caption-side: top;
       color: black;
@@ -37,36 +38,36 @@
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-}
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
+  .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  :hover .tooltiptext {
+    visibility: visible;
+  }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 400px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
 }
 
 .race-heading {
@@ -79,25 +80,16 @@
 /*
  * Sidebar
  */
- .sidebar {
+.sidebar {
   position: fixed;
   top: 10px;
   bottom: 0;
   left: 1px;
-  // z-index: 100; /* Behind the navbar */
-  
-  margin-top: 48px;
+  margin-top: 78px;
   padding-right: 100px;
-  // box-shadow: inset -10px 0 0 rgba(0, 0, 0, .1);
-  // border-right: thin solid rgba(0, 0, 0, .1);
-  
 
   .nav-link {
     font-weight: 500;
-    // color: #333;
-    // margin-top: 48px;
-
-
     margin-right: 4px;
     color: #999;
   }
@@ -112,21 +104,19 @@
   }
 }
 
-.sidebar2 {
-  padding-right: 10px;
-  // box-shadow: inset -2px 0 0 rgba(0, 0, 0, .1);
+.sidebar-divider {
   border-right: 2px solid rgba(0, 0, 0, .1);
 }
 
-.sidebar-sticky {
-  position: sticky;
-  // top: 48px; /* Height of navbar */
-  // height: calc(100vh - 48px);
-  // padding-top: .5rem;
-  overflow-x: hidden;
-}
+// .sidebar-sticky {
+//   position: sticky;
+//   // top: 48px; /* Height of navbar */
+//   // height: calc(100vh - 48px);
+//   // padding-top: .5rem;
+//   overflow-x: hidden;
+// }
 
-.sidebar-heading {
-  font-size: .75rem;
-  text-transform: uppercase;
-}
+// .sidebar-heading {
+//   font-size: .75rem;
+//   text-transform: uppercase;
+// }

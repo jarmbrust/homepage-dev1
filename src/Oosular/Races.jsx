@@ -112,11 +112,16 @@ function halflings() {
       <h3>Halflings</h3>
       <p><span className="race-heading">Lightfoot</span>: Standing around 3 feet tall they are amongst the smallest of the PC races.  
         They are generally fair skinned with darker hair colors.  Not necessarily slim, but they do often tend to be fairly lean and well 
-        toned for their size.  Often found as merchants and traders and as a people they tend to travel a lot.  Those that
+        toned for their size.  Often found as merchants and traders, they also as a people they tend to travel a lot.  Those that
         are older and successful at their jobs (ie. rich) usually settle down and grow fat. They are looked at with envy and respect by the community.
         Tattooing the left arm, sometimes fully from wrist to shoulder, is common, but rarely do they mark any other place on their bodies.
         They usually tend to be meh on the whole religion thing, accepting healing and aid from priests and clerics without qualm, but very rarely 
-        worshiping anything themselves.  They tend to simply see the world and life only as a place to become as prosperous and comfortable as possible.</p>
+        worshiping anything themselves.  They tend instead to see the world, and life in general, as a place to enjoy good company and good food, and
+        become as prosperous and comfortable as possible.  The more esoteric philosophies and sermons on piety will be politely listened to, but
+        rarely every acted upon.</p>
+      <p>Adventurers and thrill-seekers are not uncommon among the younger halflings, and even some of the more "mature" types, but generally
+        speaking if a halfling has the means to retire in comfort they tend to do so.
+      </p>
       <p><span className="race-heading">Stout</span>: Tend to be stockier and darker then their cousins, and are usually 
         found in mountain dwarf communities.  They are rarely seen outside their communities, as a culture they are not much for exploration or adventure.
         They usually follow the same elemental worship as the the Mountain Dwarves.</p>
@@ -137,7 +142,8 @@ function tieflings() {
         This reputation is the main reason they tend to be feared and distrusted by the common folk and some good aligned temples forbid 
         them to step foot on their holy grounds.</p>
       <p><span className="race-heading">Infernal</span>: Often resulting when someone forms a pact with one of the Lords of Hell, they have fully embraced
-        what they have become and are almost always evil, seeking to reek destruction and strife wherever they go. Many are warlock or paladins of ___.</p>
+        what they have become and are almost always evil, seeking to reek destruction, domination, and oppression wherever they go. Many are warlocks 
+        or paladins of ___.</p>
     </div>
   );
 }
@@ -147,10 +153,11 @@ function orcs() {
     <div>
       <h3>Orcs</h3>
       <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="orctooltip">Orcs</span>: Orc culture 
-        is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate the northwestern part of continent of Zosan,
+        is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate the northwestern part of continent of Ous,
         which is found to the east of North and South Rana.
       </p>
-      <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="halforctooltip">Half-Orcs</span>: Decedents of humans who have interbred or been interbred with orcs.</p>
+      <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="halforctooltip">Half-Orcs</span>: Decedents of 
+      humans who have interbred or been interbred with orcs.</p>
       <UncontrolledTooltip placement="right" target="orctooltip">
         Orcs and Half orcs are not in this portion of the world, they are farther to the East, and as such I have not yet fleshed them out, nor
         will they be open to use as PC's as of this writing... although that could change.
@@ -169,7 +176,7 @@ function goblinoids() {
       <h3>Goblinoids</h3>
       <p><span className="race-heading">Hobgoblins</span>:&nbsp;Standing nearly as tall as an average human, with lean and strong builds
         yellowish/orange skin tones and dark hair, hobgoblins come from a violent and repressive culture.  Brutally raised
-        from childhood in the service of the hobgoblin empire of Toulk and it's semi-divine emperor, hobgoblins have 
+        from childhood in the service of the hobgoblin empire of Touk and it's semi-divine emperor, hobgoblins have 
         a grim and determined outlook on life.  Their culture teaches that conflict and strife are the crucible that
         forges the ultimate hobgoblin warrior, and they have this credo beaten into them as children.  Organized, brutal, and cunning, 
         hobgoblins seek out challenge and battle to test themselves and their limits.  Hobgoblins worship their god-emperor who is said to have 
@@ -243,7 +250,8 @@ function yaunti() {
         using makeup or minor magic glamors to obscure what few features might appear (which are often snake-like eyes, faint patches of scales and 
         odd colorations and sometimes baldness). Many times they are rejected by their family and persecuted by society at large when discovered. 
         This can lead to many purebloods embracing their heritage and seeking out the secret 
-        societies and snake cults that are believed to exist even to this day.  Purebloods, regardless of their intentions, generally loose their 
+        societies and snake cults that are believed to exist even to this day.</p>
+        <p>Purebloods, regardless of their intentions, generally loose their 
         emotions over time, becoming cold as the blood of the snakes themselves. They rarely ever form bonds, viewing others as tools to 
         manipulate in some fashion. As such, many eventually become neutral evil in outlook, but there are those who fight that compulsion.</p>
         <UncontrolledTooltip placement="right" target="yauntitooltip">

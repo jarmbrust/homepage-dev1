@@ -43,7 +43,7 @@ function humans() {
     <div><h3>Humans</h3>
       <p><span style={{textDecoration: "underline", color:"blue"}} href="#" id="humantooltip">*Gameplay Note*</span></p>
       <UncontrolledTooltip placement="right" target="humantooltip">
-        All humans use the variant rules from the PHB: +1 to 2 ability scores of your choice,
+        All human PCs use the variant rules from the PHB: +1 to 2 ability scores of your choice,
         one extra skill proficiency, and one starting feat.
       </UncontrolledTooltip>
       <p><span className="race-heading">Nokos</span>: Said to be the decedents of the ancient Nokoyans who, as legend goes, once ruled most of Oosular. 

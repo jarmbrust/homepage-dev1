@@ -41,12 +41,14 @@ const OosularHome = () => {
             on currents of air blowing over the even then ancient tombs of the insane half-demon sorcerers of the Blood Empire.
           </p>
           <p>
-            The very ground of the frontier is full to bursting with history and lore that attracts both treasure hunters and thrill seekers eager to
+            All the history and rumors of artifacts and treasure attracted both treasure hunters and thrill seekers eager to
             delve the debts and brave the risks for fame and fortune.  Many have lost their lives in the attempt, some their very souls.  But just as
             adventurers run think on the frontier, so too do the indentured servants working off debts, peasants following their lords east, and 
-            slaved that toil away far from any sympathetic eyes and western laws that either outlaw slavery, or at the very least mitigate some of 
-            the harm slave masters can do to their "property".
-            
+            in some places slaves that toil away far from any sympathetic eyes and western antislavery laws.
+          </p>
+          <p>
+            In a caravan to Serrato, a place otherwise known as "The Last Keep", adventurers are huddled against the pouring rain.  Sitting in the back of
+            an open cart, they look to the east in the hopes of finding fame, fortune, or just a chance to start a new life on the frontier.
           </p>
         </Container>
       </div>

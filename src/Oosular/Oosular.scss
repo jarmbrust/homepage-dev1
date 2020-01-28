@@ -1,37 +1,38 @@
 .oosular-background {
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    font-size: 16px;
-    color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  margin: 10px 0 80px 0;
 
-    caption {
-      caption-side: top;
-      color: black;
-      font-size: 26px;
-    }
-    h1 {
-      font-size: 56px;
-    }
-    h2 {
-      font-size: 35px;
-    }
-    h3 {
-      font-size: 24px;
-      text-decoration: underline;
-    }
-    .table-moon {
-      border-radius: 6px 6px 6px 6px;
-      -moz-border-radius: 6px 6px 6px 6px;
-      -webkit-border-radius: 6px 6px 6px 6px;
-      border-collapse: separate;
-    }
-    #race-dropdown {
-      margin-bottom: 10px;
-    }
-    .race-description {
-      margin: 20px;
-    }
+  caption {
+    caption-side: top;
+    color: black;
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  .table-moon {
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-collapse: separate;
+  }
+  #race-dropdown {
+    margin-bottom: 10px;
+  }
+  .race-description {
+    margin: 20px;
+  }
 }
 
 .tooltip {

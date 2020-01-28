@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {
   BrowserRouter as Router,
   Route,
@@ -29,11 +29,6 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  let imgStyle = {
-    maxHeight: '24px',
-    maxWidth: '24px'
-  }
-
   return (
     <div>
       <Router>
@@ -67,7 +62,7 @@ function App() {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText><Media style={imgStyle} object src="/logo.png" alt="Generic cartoon image" /></NavbarText>
+          <NavbarText><Media object src="/logo.png" alt="Generic cartoon image" /></NavbarText>
         </Navbar>
         <Switch>
           <Route path="/" exact component={Home} />

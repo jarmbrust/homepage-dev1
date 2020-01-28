@@ -1,10 +1,15 @@
 .about-background {
-  background-color: #dcdee0;
+  // background-color: #dcdee0;
   align-items: center;
   justify-content: center;
   text-align: left;
   font-size: 24px;
   color: black;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 40px;
+
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }

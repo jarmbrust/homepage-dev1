@@ -49,18 +49,30 @@ function humans() {
         All human PCs use the variant rules from the PHB: +1 to 2 ability scores of your choice,
         one extra skill proficiency, and one starting feat.
       </UncontrolledTooltip>
-      <p><span className="race-heading">Nokos</span>: Said to be the decedents of the ancient Nokoyans who, as legend goes, once ruled most of Oosular. 
-        They generally have light to medium skin tones and darker hair and eyes.  They don't have a distinctive culture having appropriated much
-        throughout the year, but some worship there three gods, otherwise known just as The Trinity -- an ancient religion said to extend back to 
-        the days of the Nokoyan Empire.</p>
-      <p><span className="race-heading">Tarok</span>: A fair hair and skinned people who live in the northern portions of the northern continent. 
-        They generally speak the North Ranan dialect and the traditional language of Taro. Most of the northern barbarians are 
-        of the Tarok people, but not all Tarok are barbarians. A few have come to worship The Trinity due to Nokos missionaries, but many hold to a
-        form of traditional druidism they have had for as long as they can remember (scholars believe it may have been learned from the wood elves, but
-        the Tarok generally disagree vehemently with that theory).</p>
-      <p><span className="race-heading">Ven</span>: A darker skinned people that originally came from the western sea and settled 
-        in southern Rana. They speak in the South Ranan dialect and the language of the Ven, and brought with them a lunar-based religion where there are
-        nine gods, one for each moon. Each is worshiped on their respective months.</p>
+      <p><span className="race-heading">Nokos</span>: The decedents of the humans who made up the original Nokoyan empire.  The empire
+        fell centuries ago but the people endure and can be found most places there are humans.  They generally have light to medium skin 
+        tones and darker hair and eyes.  They don't have a distinctive culture having appropriated much
+        throughout the years, but some worship a pantheon of three gods, otherwise known just as The Trinity.  Nokoyans have a
+        cultural tradition of wearing makeup around their eyes, a tradition very common with the females but most men
+        practice it too.  They tend as a culture to be quite religious since the fall of their empire, and
+        from their people come some of the most powerful clerics and paladins.
+      </p>
+      <p><span className="race-heading">Tarok</span>: A fair skinned people who live in the northern portions of the continent, 
+        and tribes of them still inhabit parts of the frontier.  The most famous, or infamous, of them are the tribes of the
+        Kaza-Groth who dominated the lands of the frontier for centuries with their perpetual wars, until the last of the 
+        great tribes migrated north just over a century ago.  The Tarok, and especially the Kaza-Groth, value strength and courage and venerate
+        the scars they gained in battle or those applied via sacred rituals.  Their valuation of strength goes so far that some tribes have
+        interbred with orcs, seeking to gain the orc might and ferocity in battle.  As a result, most in-game half-orcs
+        are of Tarok ancestry.
+        </p>
+      <p><span className="race-heading">Ven</span>: A darker skinned people whom originally came from beyond the western sea and settled 
+        in the south most portion of the western lands.  They speak the language of the Ven as well as the common tongue of the western lands,
+        and they brought with them a lunar-based religion with nine gods, one for each moon. Each is worshiped on their respective months. 
+        They have customs which elevate intelligence, craftiness, and the practice of the arcane arts.
+        As a result, many wizards and eldrich knights hail from this group of people.  Most Ven wear their hair short or shave their heads,
+        a practice common even among their women. They also tend to be fond of jewelry and Ven of both genders wear bracelets,
+        earings, and various body piercings.
+      </p>
     </div> 
   );
 }
@@ -69,23 +81,30 @@ function elves() {
   return (
     <div>
       <h3>Elves</h3>
-      <p><span className="race-heading">High Elves</span>: Claim to be the oldest and most "pure" elves and to have once had an empire greater than Nokoya.  
-        They have very light to almost albino skin tones, hair that ranges from light blond, light blue, or white, and eye colors that often are gold, 
-        but can be silver, violet, or pale blue. They tend to be quite slim and stand on average around six and a half feet tall. They are scattered 
-        around in enclaves usually in human cities, and are seen as highly intelligent, eccentric, and aloof.  These elves are also the longest lived 
-        of any known mortal humanoid (making it into their 6th, and on rare cases even 9th centuries), but are prone to in-breeding 
-        (and all the fun traits that come from that) due to their low numbers and birth rates.  They speak the high-elven dialect as well as some regional
-        languages. Most have at least some training in magic and often serve as advisors to kings. Those that hold to a religion usually 
-        revere what they call The Source -- the origin of all things magical.</p>
+      <p><span className="race-heading">High Elves</span>: Claim to be the oldest and most "pure" elves, and to have
+        once had an empire long ago that was greater than the Nokoyan.  They have very light to almost albino skin tones,
+        hair that ranges from light blond, light blue, or white, and eye colors that often are gold, 
+        but can be silver, violet, or pale blue. They tend to be quite slim and stand on average around six and a half feet tall and,
+        having no population center of their own, are often found are scattered around in enclaves usually in human cities.
+        They are seen as highly intelligent, eccentric, and often appear aloof to non-high elves.  These elves are also the longest lived 
+        of any known mortal humanoid (making it into their 5th, and on rare cases even 8th centuries), but are prone to in-breeding 
+        (and all the fun traits that come from that) due to their low numbers and birth rates.  They speak the high-elven 
+        dialect as well as some regional languages. Most have at least some training in magic and often serve as advisors to kings.
+        Those that hold to a religion usually revere what they call The Source -- the origin of all things magical.
+      </p>
       <p><span className="race-heading">Wood Elves</span>: Range from light to medium skin tones with hair from blond, brown, red, black and green. 
-        They are slim of build and seldom stand much over 5'.  Some trade and intermix with human communities, although many tribes (often coined "wild elves") take a more xenophobic 
-        approach to outsiders and stay secluded in their forests.  They rarely tattoo themselves, but love elaborate semi-permanent body-paint worn by 
-        both males and females.  They can live into their 3rd century and speak the wood elf dialect as well as some regional languages.
-        Culturally they don't revere any specific gods, but follow the teachings of their druids.</p>
+        They are slim of build and seldom stand much over five feet tall.  Some trade and intermix with human communities, 
+        although some tribes (often coined "wild elves") take a more xenophobic approach to outsiders and stay secluded in their forests.
+        They rarely tattoo themselves, but love elaborate semi-permanent body paint worn by both males and females.
+        They can live into their 3rd century and speak the wood elf dialect as well as some regional languages.
+        Culturally they don't revere any specific gods, but follow the teachings of their druids.
+      </p>
       <p><span className="race-heading">Half Elves</span>: Almost always of wood elf decent, they have a mixture of their parents' traits. 
         They are generally accepted in most human communities although their level of acceptance can vary widely amongst the elves. 
-        High elf half-breeds are very rare (almost non-existent) and viewed as pariahs amongst the elves.  Half-elves don't really have a distinctive
-        culture, usually adopting either the elven or human culture they were raised in. They generally live for about a century and a half.</p>
+        High elf half-breeds are very rare (almost non-existent) and viewed as pariahs amongst the elves.
+        Half-elves don't really have a distinctive culture, usually adopting either the elven or human culture they were raised in. 
+        They generally live for about a century and a half.
+      </p>
     </div>
   );
 }
@@ -98,11 +117,12 @@ function dwarves() {
         they have medium to darker skin tones, dark red, black, grey, and dark blue hair is common. Men will always have beards unless a convicted 
         criminal or outcast (or insane). Women generally grow their hair long and usually in intricate traditional braids.  Tattoos are very common, 
         and often tell a story about the clan the dwarf is from. Body piercings of fine jewelry are common to those that can afford it. 
-        They stand just over four feed tall on average.  As a people they worship one god, Thorun, as creator and protector.  Some (but not all) 
-        go so far as to decry all other gods as false and can react quite negatively to priests and clerics of other religions.</p>
+        They stand just over four feed tall on average.  As a people they worship one god, Tornoc, as creator and protector.  Some (but not all) 
+        go so far as to decry all other gods as false and can react quite negatively to priests and clerics of other religions.
+        Clerics to Tornoc often see it as a right of passage to travel the world some before returning to their clans to teach and worship.</p>
       <p><span className="race-heading">Mountain Dwarves</span>: Slightly taller and fairer skinned then their hill dwarf cousins, 
         with blond, black, red, or brown hair coloring, the mountain dwarves tend to stay in their mountains and are content to have minimal 
-        trade with outsiders if their lands and mines are left alone. Adventuring mountain dwarves are almost always outcasts or disgraced in some manner.
+        trade with outsiders, if their lands and mines are left alone. Adventuring mountain dwarves are almost always outcasts or disgraced in some manner.
         Most follow an ancient practice of elemental worship (usually the elements of earth and fire take prominence), which often brings them 
         into conflict with their hill dwarf cousins.</p>
     </div>
@@ -113,21 +133,22 @@ function halflings() {
   return(
     <div>
       <h3>Halflings</h3>
-      <p><span className="race-heading">Lightfoot</span>: Standing around 3 feet tall they are amongst the smallest of the PC races.  
+      <p><span className="race-heading">Lightfoot</span>: Standing around three feet tall they are amongst the smallest of the PC races.  
         They are generally fair skinned with darker hair colors.  Not necessarily slim, but they do often tend to be fairly lean and well 
         toned for their size.  Often found as merchants and traders, they also as a people they tend to travel a lot.  Those that
-        are older and successful at their jobs (ie. rich) usually settle down and grow fat. They are looked at with envy and respect by the community.
+        are older and wealthy usually settle down and grow fat. They are looked at with envy and respect by the community.
         Tattooing the left arm, sometimes fully from wrist to shoulder, is common, but rarely do they mark any other place on their bodies.
-        They usually tend to be meh on the whole religion thing, accepting healing and aid from priests and clerics without qualm, but very rarely 
-        worshiping anything themselves.  They tend instead to see the world, and life in general, as a place to enjoy good company and good food, and
-        become as prosperous and comfortable as possible.  The more esoteric philosophies and sermons on piety will be politely listened to, but
-        rarely every acted upon.</p>
+        They usually tend to be meh on the whole religion thing, accepting healing and aid from priests and clerics without qualm, and sometimes
+        listening politely to their sermons if need be, but very rarely worshiping anything themselves.  Halfling clerics or paladins are
+        extremely rare.  They tend instead to see the world, and life in general, as a place to enjoy good company and good food, and endeavor
+        become as prosperous and comfortable as possible.  Some go so far as to live a hedonistic lifestyle enjoying any and all forms of
+        pleasure they can afford.</p>
       <p>Adventurers and thrill-seekers are not uncommon among the younger halflings, and even some of the more "mature" types, but generally
         speaking if a halfling has the means to retire in comfort they tend to do so.
       </p>
       <p><span className="race-heading">Stout</span>: Tend to be stockier and darker then their cousins, and are usually 
-        found in mountain dwarf communities.  They are rarely seen outside their communities, as a culture they are not much for exploration or adventure.
-        They usually follow the same elemental worship as the the Mountain Dwarves.</p>
+        found in mountain dwarf communities.  They are rarely seen outside their communities, as a culture they are not much for 
+        exploration or adventure. They usually follow the same elemental worship as their the Mountain Dwarves allies.</p>
     </div>
   );
 }

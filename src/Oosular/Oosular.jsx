@@ -5,7 +5,7 @@ import {
   Navbar,
   NavItem,
   NavLink as NavLinkRS,
-  UncontrolledCollapse, Button 
+  UncontrolledCollapse 
 } from 'reactstrap'
 import {
   BrowserRouter as Router,
@@ -20,8 +20,7 @@ import OosularHome from './OosularHome';
 import Races from './Races';
 
 const Oosular = (props) => {
-
-  const pcRaces = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Goblinoid', 'Lizardfolk', 'Yaun-Ti', 'Orc']
+  const pcRaces = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Goblinoid', 'Lizardfolk', 'Yaun-Ti', 'Orc'];
 
   return (
     <div className="oosular-background">
@@ -54,11 +53,10 @@ const Oosular = (props) => {
           <Route path="/oosular" exact component={OosularHome}/>
           <Route path="/oosular/moons" component={Moons} />
           <Route path="/oosular/map" exact component={NorthRanaMap} />
-          {/* <Route path="/oosular/peoples" exact component={Peoples} /> */}
-            { 
-              pcRaces.map(race =>
-              <Route path={`/oosular/peoples/${race}`} exact component={() => <Races race={race}/>}/>
-            )}
+          { 
+            pcRaces.map(race =>
+            <Route path={`/oosular/peoples/${race}`} exact component={() => <Races race={race}/>}/>
+          )}
         </Switch>
       </Router>
     </div>

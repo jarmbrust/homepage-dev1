@@ -1,15 +1,18 @@
 import React from 'react';
 import './Oosular.scss';
 import {
-  UncontrolledTooltip
+  UncontrolledTooltip,
+  Container
 } from 'reactstrap'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const Races = (props) => {
   return (
-    <div>{raceDescription(props.race)}</div>
+    <div className="oosular-background">
+      <Container className="col-md-6">
+        {raceDescription(props.race)}
+      </Container>
+    </div>
   );
 }
   

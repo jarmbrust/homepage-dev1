@@ -14,7 +14,11 @@ const Moons = () => {
         <p>The world of Oosular has nine small moons.  The corresponding nine months of the year are determined by which moon is closest to the 
           planet during that time.  Each month is about 40 days long, and the year is 361 days long.  The last day is the annual Day of Darkness, 
           where some believe the mysterious black 10th moon is closest to the world and the veil between death and life is at its thinnest. 
-          This is considered the last day of the year, and a day that the spirits of the dead freely walk the world.</p>
+          This is considered the last day of the year, and a day that the spirits of the dead freely walk the world.
+        </p>
+        <p>
+          Current date is the __ day of ____ in the year 1395 of the founding of Nokoya, otherwise known as 2573 of the Fourth Age of the world.
+        </p>
         <Table bordered hover dark className="table-moon">
           <caption>The Nine Lunar Months (+1 day)</caption>
           <tbody>
@@ -25,7 +29,7 @@ const Moons = () => {
             <th scope="col">???</th>
           </tr>
           <tr>
-            <td>Ous</td>
+            <td>Ouros</td>
             <td>40</td>
             <td>Day of Rebirth (1st), Feast of the New Year (12th)</td>
             <td></td>

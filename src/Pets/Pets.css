@@ -1,6 +1,6 @@
 .pets-background {
   padding-top: 40px;
-  background-color: #dcdee0;
+  /* background-color: #dcdee0; */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -11,3 +11,6 @@ Table {
   text-align: Left;
 }
 
+/* caption {
+  caption-side: top;
+} */

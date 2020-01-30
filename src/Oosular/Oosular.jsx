@@ -4,7 +4,8 @@ import {
   Nav,
   Navbar,
   NavItem,
-  NavLink as NavLinkRS
+  NavLink as NavLinkRS,
+  UncontrolledCollapse 
 } from 'reactstrap'
 import {
   BrowserRouter as Router,
@@ -16,12 +17,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Moons from './Moons';
 import NorthRanaMap from './NorthRanaMap';
 import OosularHome from './OosularHome';
-import Peoples from './Peoples';
+import Races from './Races';
 
-const Oosular = () => {
+const Oosular = (props) => {
+  const pcRaces = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Goblinoid', 'Lizardfolk', 'Yaun-Ti', 'Orc'];
+
   return (
     <div className="oosular-background">
-      {/* <section> */}
         <Router>
           <Navbar color='faded' expand='md'>
             <section className='sidebar col-md-3'>
@@ -36,7 +38,13 @@ const Oosular = () => {
                   <NavLinkRS tag={NavLink} to="/oosular/moons" exact>Lunar Calendar</NavLinkRS>
                 </NavItem>
                 <NavItem>
-                  <NavLinkRS tag={NavLink} to="/oosular/peoples" exact>Peoples</NavLinkRS>
+                  <Navbar className="nav-link" color='faded' expand='md' id="toggler">Peoples</Navbar>
+                  <UncontrolledCollapse toggler="#toggler">
+                    { 
+                      pcRaces.map(race =>
+                      <NavLinkRS className="sub-link" tag={NavLink} to={`/oosular/peoples/${race}`} exact>{race}</NavLinkRS>
+                    )}
+                  </UncontrolledCollapse>
                 </NavItem>
               </Nav>
             </section>
@@ -45,10 +53,12 @@ const Oosular = () => {
           <Route path="/oosular" exact component={OosularHome}/>
           <Route path="/oosular/moons" component={Moons} />
           <Route path="/oosular/map" exact component={NorthRanaMap} />
-          <Route path="/oosular/peoples" exact component={Peoples} />
+          { 
+            pcRaces.map(race =>
+            <Route path={`/oosular/peoples/${race}`} exact component={() => <Races race={race}/>}/>
+          )}
         </Switch>
       </Router>
-      {/* </section> */}
     </div>
   );
 }

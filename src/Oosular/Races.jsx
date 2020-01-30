@@ -122,9 +122,9 @@ function dwarves() {
         Clerics to Tornoc often see it as a right of passage to travel the world some before returning to their clans to teach and worship.</p>
       <p><span className="race-heading">Mountain Dwarves</span>: Slightly taller and fairer skinned then their hill dwarf cousins, 
         with blond, black, red, or brown hair coloring, the mountain dwarves tend to stay in their mountains and are content to have minimal 
-        trade with outsiders, if their lands and mines are left alone. Adventuring mountain dwarves are almost always outcasts or disgraced in some manner.
-        Most follow an ancient practice of elemental worship (usually the elements of earth and fire take prominence), which often brings them 
-        into conflict with their hill dwarf cousins.</p>
+        trade with outsiders as long as their lands and mines are left alone. Adventuring mountain dwarves are almost always outcasts or 
+        disgraced in some manner.  Most follow an ancient practice of elemental worship (usually the elements of earth and fire 
+        take prominence), which often brings them into conflict with their hill dwarf cousins.</p>
     </div>
   );
 }
@@ -141,8 +141,8 @@ function halflings() {
         They usually tend to be meh on the whole religion thing, accepting healing and aid from priests and clerics without qualm, and sometimes
         listening politely to their sermons if need be, but very rarely worshiping anything themselves.  Halfling clerics or paladins are
         extremely rare.  They tend instead to see the world, and life in general, as a place to enjoy good company and good food, and endeavor
-        become as prosperous and comfortable as possible.  Some go so far as to live a hedonistic lifestyle enjoying any and all forms of
-        pleasure they can afford.</p>
+        become as prosperous and comfortable as possible.  Some take it a step farter though and live a hedonistic lifestyle enjoying 
+        any and all forms of pleasure they can afford.</p>
       <p>Adventurers and thrill-seekers are not uncommon among the younger halflings, and even some of the more "mature" types, but generally
         speaking if a halfling has the means to retire in comfort they tend to do so.
       </p>
@@ -157,17 +157,18 @@ function tieflings() {
   return(
     <div>
       <h3>Tieflings</h3>
-      <p><span className="race-heading">Demonic</span>: Standing about the height and weight of the average human, with red, dark red or black skin, with 
-        solid black or red eyes, they are the decedents of those with demonic blood, 
-        many tracing their bloodlines back to the time of the last demonic incursion, which occurred around 800 years ago.  Some reject
-        their heritage, seeing it as a corruption they must overcome, but most tend to embrace it, as it is sometimes taught to them in their 
-        tiefling parent or parents.  Those who embrace it are not necessarily evil, but tend to be, and are never of a good alignment. 
-        Many go so far as to worship their demonic parentage, often being leaders or founders of cults to their demonic ancestor.  
-        This reputation is the main reason they tend to be feared and distrusted by the common folk and some good aligned temples forbid 
-        them to step foot on their holy grounds.</p>
-      <p><span className="race-heading">Infernal</span>: Often resulting when someone forms a pact with one of the Lords of Hell, they have fully embraced
-        what they have become and are almost always evil, seeking to reek destruction, domination, and oppression wherever they go. Many are warlocks 
-        or paladins of ___.</p>
+      <p><span className="race-heading">Demonic</span>: Standing about the height and weight of the average human, with appearances as described
+        in the PHB, they are the decedents of those with demonic blood.  Some claim to be able to traced their bloodlines back
+        over 3500 years to the time of the Blood Empire, ruled as it was by the cabal of half-demon sorcerers. Some take pride in their
+        ancestry, but many reject the demonic heritage, seeing it as a corruption they must overcome. Those who embrace it are not necessarily evil, 
+        but tend to be, and are rarely ever of a good alignment. Some of those who embrace it go so far as to worship their demonic parentage,
+        maybe even becoming a leader or founder of a cult to their demonic ancestor.  The bad reputation tieflings tend to have is one of the reasons 
+        they to be feared and distrusted by the common folk.
+      </p>
+      <p><span className="race-heading">Infernal</span>: Often resulting when someone forms a pact with one of the Lords of Hell, 
+        they have fully embraced what they have become and are almost always evil, seeking to reek destruction, domination, 
+        and oppression wherever they go. Many are warlocks or paladins with an oath of ______.
+      </p>
     </div>
   );
 }
@@ -177,19 +178,24 @@ function orcs() {
     <div>
       <h3>Orcs</h3>
       <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="orctooltip">Orcs</span>: Orc culture 
-        is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate the northwestern part of continent of Ous,
-        which is found to the east of North and South Rana.
+        is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate parts of the frontier, and are
+        a threat to any who venture too far off the beaten path.  Orcs worship the savage spirits of ancestors, and orc clerics 
+        harness these chaotic spirits to use their powers to smite those who would oppose the orcs.
       </p>
-      <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="halforctooltip">Half-Orcs</span>: Decedents of 
-      humans who have interbred or been interbred with orcs.</p>
+      <p><span className="race-heading">Half-Orcs</span>: 
+        Decedents of humans who have interbred or been interbred with orcs.  Most half-orcs are of Tarok ancestry as those 
+        human tribes intentionally interbred with their orc neighbors in an attempt to gain the orc strength and ferocity in their tribe.
+        PC orcs could be barbarians of those tribes or have been born on the frontier in other human communities.  It is unlikely that 
+        any half-orcs born in the orc tribes could be PC's due to the orc chaotic evil nature.
+      </p>
       <UncontrolledTooltip placement="right" target="orctooltip">
-        Orcs and Half orcs are not in this portion of the world, they are farther to the East, and as such I have not yet fleshed them out, nor
-        will they be open to use as PC's as of this writing... although that could change.
+        Orcs are not likely to be allowed as PC's due to their redundancy with half-orcs, and the strong and savage chaotic evil nature of orcs.
+        Exceptions might be allowed for a good backstory, but that will be on a case by case basis.
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="right" target="halforctooltip">
+      {/* <UncontrolledTooltip placement="right" target="halforctooltip">
         See orc tooltip above.  Plus, if orcs are allowed as PC's then chances that half-orcs will exist as a race are slim since it would be
         somewhat redundant.
-      </UncontrolledTooltip>
+      </UncontrolledTooltip> */}
     </div>
   );
 }
@@ -198,27 +204,28 @@ function goblinoids() {
   return(
     <div>
       <h3>Goblinoids</h3>
-      <p><span className="race-heading">Hobgoblins</span>:&nbsp;Standing nearly as tall as an average human, with lean and strong builds
-        yellowish/orange skin tones and dark hair, hobgoblins come from a violent and repressive culture.  Brutally raised
-        from childhood in the service of the hobgoblin empire of Touk and it's semi-divine emperor, hobgoblins have 
+      <p><span className="race-heading">Hobgoblins</span>:&nbsp;Standing nearly as tall as an average human, with lean and strong builds,
+        yellowish/orange skin tones, and dark hair, hobgoblins come from a violent and oppressive culture.  Brutally raised
+        from childhood in the service of the hobgoblin empire of Toulk and it's semi-divine emperor, hobgoblins have 
         a grim and determined outlook on life.  Their culture teaches that conflict and strife are the crucible that
         forges the ultimate hobgoblin warrior, and they have this credo beaten into them as children.  Organized, brutal, and cunning, 
         hobgoblins seek out challenge and battle to test themselves and their limits.  Hobgoblins worship their god-emperor who is said to have 
-        ruled them for over 400 years. All other religion is forbidden and they seek to bring all peoples under the dominion of the emperor.</p>
+        ruled them for the last 400 years. All other religion is forbidden and they seek to bring all peoples under the dominion of the emperor.
+        The empire is located to the southeast of the frontier and it is not uncommon to run into hobgoblin patrols.</p>
       <p>PC hobgoblins are either from a decimated and disgraced legion, outcasts of the
         empire, or soldiers of fortune seeking fame and infamy. Due to the way they were raised, hobgoblins are pretty much
-        always lawful and (almost) always evil.
+        always lawful and (almost) always evil.  Players have more flexibility in alignment, but *probably* should at least be lawful.
       </p>
       <p><span className="race-heading">Goblins</span>:&nbsp;
-        Wiry, cunning, and mischievous (with the ability to breed almost like rabbits), goblins are viewed far and wide as cunning
-        and dangerous pests. Rarely are they allowed in many of the more
-        civilized locals, and when they are they are often watched like hawks. It is not uncommon for more remote townships to offer bounties
-        for goblin kills (usually they accept pairs of ears as proof of kill).  Goblins can be found in almost any local, and are often raised
-        in warren-like lairs where the largest and strongest bully and torment the smaller ones.  Children are often kept in cages or pens 
-        until they are old enough to be useful and fend for themselves.  There are said to be a few goblin warrens that have a more traditional tribalism, and those
-        goblins are most likely to have non-evil members.  But such lairs are very rare and are generally unknown to all but the most learned goblin
-        scholars. Goblins raised in the empire follow the hobgoblin god-emperor, other "wild goblins" usually follow a loose form of dark shamanism
-        based around appeasing and enslaving evil spirits.</p>
+        Wiry, cunning, and mischievous (with the ability to breed almost like rabbits), goblins are viewed far and wide as dangerous pests. 
+        Rarely are they allowed in many of the more
+        civilized locals, and when they are they are watched like hawks. It is not uncommon for more remote townships to offer bounties
+        for goblin kills (usually they accept pairs of ears as proof of kill).  Goblins can be found in almost any location, and are often raised
+        in warren-like lairs where the largest and strongest bully and torment the smaller ones.  Children are many times kept in cages or pens 
+        until they are old enough to be useful and fend for themselves. Goblins raised in the hobgoblin empire follow the god-emperor, 
+        other "wild goblins" usually follow a loose form of dark shamanism
+        based around appeasing and enslaving evil spirits.
+      </p>
       <p>PC goblins are rare and often have trouble getting into many civilized places. Sometimes in bigger cities they can blend 
         into the crowd and therefore are often are not harassed... much.  But, generally they will have to get used to always being suspect.
       </p>

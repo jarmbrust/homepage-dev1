@@ -10,7 +10,7 @@ class Cats extends Component {
     return(
        <div className="cats">
         <Container className="themed-container" fluid="sm">
-        <Table dark>
+        <Table dark className="table-pets">
           <caption>Cats in the order they were adopted:</caption>
           <thead>
             <tr>

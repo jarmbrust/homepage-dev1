@@ -11,7 +11,7 @@ class Dogs extends Component {
     return(
       <div className="dogs">
         <Container className="themed-container" fluid="sm">
-        <Table dark>
+        <Table dark className="table-pets">
           <caption>Dogs in the order they were adopted:</caption>
           <thead>
             <tr>

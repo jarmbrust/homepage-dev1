@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Pets.css';
+import './Pets.scss';
 import Dogs from './Dogs';
 import Cats from './Cats';
 import { Container } from 'reactstrap';

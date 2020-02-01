@@ -15,7 +15,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Moons from './Moons';
-import NorthRanaMap from './NorthRanaMap';
+import Maps from './Maps';
 import OosularHome from './OosularHome';
 import Races from './Races';
 
@@ -52,7 +52,7 @@ const Oosular = (props) => {
         <Switch>
           <Route path="/oosular" exact component={OosularHome}/>
           <Route path="/oosular/moons" component={Moons} />
-          <Route path="/oosular/map" exact component={NorthRanaMap} />
+          <Route path="/oosular/map" exact component={Maps} />
           { 
             pcRaces.map(race =>
             <Route path={`/oosular/peoples/${race}`} exact component={() => <Races race={race}/>}/>

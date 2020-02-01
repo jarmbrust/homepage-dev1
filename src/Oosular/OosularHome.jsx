@@ -13,8 +13,9 @@ const OosularHome = () => {
           <h1 className="title">The World of Oosular</h1>
           <h2 className="sub-title">The Western Lands of the Continent of Ous, and its Eastern Frontier</h2>
           <p>
-            In a time before the Great Reckoning, thousands of years after the fall of the ancient god-kings of Xantavar to
-            the Dragon Lords of Tor, fifteen hundred years after the Necromancers of Prentos failed in their bid for immortality
+            In a time before the Reckoning, thousands of years after the fall of the ancient god-kings of Xantavar to
+            the Dragon Lords of Tor, and the rise and fall of the demonic Blood Empire, fifteen hundred years after
+            the Necromancers of Prentos failed in their bid for immortality
             and were cast down by the Murn'Ator, eight hundred years after the mighty Nokoyan Empire crumbled from within, 
             and over a century after the last of the barbarian warlords of the Kaza-Groth retreated to the northeast, 
             the lands of the western edge of the continent of Ous knew some measure of peace...
@@ -23,7 +24,7 @@ const OosularHome = () => {
             For over three generations of men peace and prosperity spread across the lands.  There were bad years of course, but overall crops prospered, towns sprung up, 
             kingdoms expanded, and cities grew.  Eventually expansion and growing populations took its toll, and as tensions flared when borders were 
             disputed, and the armies of the ruling cities skirmished here and there.  The three great human cities of the region: 
-            Aesana, Vrentae, and Rentu, had a fragile truce that had lasted for decades.  But many believed it was only a matter of time before open war broke 
+            Zlago, Vrentae, and Xares, had a fragile truce that had lasted for decades.  But many believed it was only a matter of time before open war broke 
             out and shattered the last 110 years of peace.
           </p>
           <p>
@@ -55,9 +56,9 @@ const OosularHome = () => {
             But such threats do little to dissuade those that do make the trip to the east.
           </p>
           <p>
-            In a caravan to Serrato, a place on the frontier sometimes referred to as "The Last Keep", travelers are huddled against the pouring rain in the back 
-            of an open cart, this one cart in particular driven by an old dwarf and his two misshapen beasts of burden.  
-            The travelers look to the east in the direction they are traveling, and towards the hopes of finding fame, fortune, 
+            In a caravan to Odonburn, a place on the frontier sometimes referred to as "The Last Haven", travelers are huddled against the pouring rain in the back 
+            of an open cart.  Driven by an old dwarf and his two misshapen beasts of burden, the travelers can feel every rock and hole in the road.  
+            The travelers look to the east past the dwarf and his beasts, and towards the hopes of finding fame, fortune, 
             or just a chance to start a new life on the frontier.
           </p>
         </Container>

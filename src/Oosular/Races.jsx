@@ -49,12 +49,12 @@ function humans() {
         All human PCs use the variant rules from the PHB: +1 to 2 ability scores of your choice,
         one extra skill proficiency, and one starting feat.
       </UncontrolledTooltip>
-      <p><span className="race-heading">Nokos</span>: The decedents of the humans who made up the original Nokoyan empire.  The empire
+      <p><span className="race-heading">Nokos</span>: The decedents of the humans who made up the core of the Nokoyan empire.  The empire
         fell centuries ago but the people endure and can be found most places there are humans.  They generally have light to medium skin 
-        tones and darker hair and eyes.  They don't have a distinctive culture having appropriated much
-        throughout the years, but some worship a pantheon of three gods, otherwise known just as The Trinity.  Nokoyans have a
-        cultural tradition of wearing makeup around their eyes, a tradition very common with the females but most men
-        practice it too.  They tend as a culture to be quite religious since the fall of their empire, and
+        tones and darker hair and eyes.  They don't have very many distinctive cultural traits, having appropriated much
+        throughout the years, but many worship a pantheon of three gods otherwise known just as The Trinity.  Nokos have a
+        cultural tradition of wearing makeup around their eyes, a tradition that stretches back to the dawn of the Nokoyan Empire and 
+        is common with both females and males.  They tend to be quite religious since the fall of their empire, and
         from their people come some of the most powerful clerics and paladins.
       </p>
       <p><span className="race-heading">Tarok</span>: A fair skinned people who live in the northern portions of the continent, 
@@ -65,7 +65,7 @@ function humans() {
         interbred with orcs, seeking to gain the orc might and ferocity in battle.  As a result, most in-game half-orcs
         are of Tarok ancestry.
         </p>
-      <p><span className="race-heading">Ven</span>: A darker skinned people whom originally came from beyond the western sea and settled 
+      <p><span className="race-heading">Ven</span>: A darker skinned people whom originate from beyond the western sea and settled 
         in the south most portion of the western lands.  They speak the language of the Ven as well as the common tongue of the western lands,
         and they brought with them a lunar-based religion with nine gods, one for each moon. Each is worshiped on their respective months. 
         They have customs which elevate intelligence, craftiness, and the practice of the arcane arts.
@@ -186,16 +186,12 @@ function orcs() {
         Decedents of humans who have interbred or been interbred with orcs.  Most half-orcs are of Tarok ancestry as those 
         human tribes intentionally interbred with their orc neighbors in an attempt to gain the orc strength and ferocity in their tribe.
         PC orcs could be barbarians of those tribes or have been born on the frontier in other human communities.  It is unlikely that 
-        any half-orcs born in the orc tribes could be PC's due to the orc chaotic evil nature.
+        any half-orcs born in the orc tribes could be PC's due to due to being raised among the chaotic and evil orcs.
       </p>
       <UncontrolledTooltip placement="right" target="orctooltip">
         Orcs are not likely to be allowed as PC's due to their redundancy with half-orcs, and the strong and savage chaotic evil nature of orcs.
         Exceptions might be allowed for a good backstory, but that will be on a case by case basis.
       </UncontrolledTooltip>
-      {/* <UncontrolledTooltip placement="right" target="halforctooltip">
-        See orc tooltip above.  Plus, if orcs are allowed as PC's then chances that half-orcs will exist as a race are slim since it would be
-        somewhat redundant.
-      </UncontrolledTooltip> */}
     </div>
   );
 }

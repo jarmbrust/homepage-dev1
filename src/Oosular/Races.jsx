@@ -49,27 +49,30 @@ function humans() {
         All human PCs can use the variant rules from the PHB: +1 to 2 ability scores of your choice,
         one extra skill proficiency, and one starting feat.
       </UncontrolledTooltip>
-      <p><span className="race-heading">Nokos</span>: The decedents of the humans who made up the core of the Nokoyan empire.  The empire
+      <p><span className="race-heading">Nokoyan</span>: The decedents of the humans who made up the core of the Nokoyan empire.  The empire
         fell centuries ago but the people endure and can be found most places there are humans.  They generally have light to medium skin 
-        tones and darker hair and eyes.  They don't have very many distinctive cultural traits, having appropriated much
-        throughout the years, but many worship a pantheon of three gods otherwise known just as The Trinity.  Nokos have a
-        cultural tradition of wearing makeup around their eyes, a tradition that stretches back to the dawn of the Nokoyan Empire and 
+        tones and darker hair and eyes.  Most of the human population of the city-state of Vrentae are of Nokoyan decent. 
+        They don't have very many distinctive cultural traits, having appropriated much
+        throughout the years, but many worship a pantheon of three gods otherwise known just as The Trinity.  Nokoyan have a
+        tradition of wearing makeup around their eyes (which has spread to other ethnicity and races in Vrentae), 
+        a tradition that stretches back to the highpoint of the Nokoyan Empire and 
         is common with both females and males.  They tend to be quite religious since the fall of their empire, and
         from their people come some of the most powerful clerics and paladins.
       </p>
       <p><span className="race-heading">Tarok</span>: A fair skinned people who live in the northern portions of the continent, 
-        and tribes of them still inhabit parts of the frontier.  The most famous, or infamous, of them are the tribes of the
+        and tribes of a similar linage inhabit parts of the frontier.  The most famous, or infamous, group of Tarok are the tribes of the
         Kaza-Groth who dominated the lands of the frontier for centuries with their perpetual wars, until the last of the 
         great tribes migrated north just over a century ago.  The Tarok, and especially the Kaza-Groth, value strength and courage and venerate
         the scars they gained in battle or those applied via sacred rituals.  Their valuation of strength goes so far that some tribes have
         interbred with orcs, seeking to gain the orc might and ferocity in battle.  As a result, most half-orcs
         are of Tarok ancestry.
-        </p>
+      </p>
       <p><span className="race-heading">Ven</span>: A darker skinned people whom originate from beyond the western sea and settled 
-        in the south most portion of the western lands.  They speak the language of the Ven as well as the common tongue of the western lands,
-        and they brought with them a lunar-based religion with nine gods, one for each moon. Each is worshiped on their respective months. 
-        They have customs which elevate intelligence, craftiness, and the practice of the arcane arts.
-        As a result, many wizards and eldrich knights hail from this group of people.  Most Ven wear their hair short or shave their heads,
+        in the southern portion of the western lands.  They make up the majority of the population of the city-state of Kiron, but can be
+        found anywhere there are humans.  They speak the language of the Ven as well as the common tongue of the western lands,
+        and they brought with them a lunar-based religion with nine gods, one for each moon.  They have customs which 
+        elevate intelligence, craftiness, and the practice of the arcane arts.
+        As a result, many wizards and other arcane practitioners hail from this group of people.  Most Ven wear their hair short or shave their heads,
         a practice common even among their women. They also tend to be fond of jewelry and Ven of both genders wear bracelets,
         earings, and various body piercings.
       </p>
@@ -180,7 +183,7 @@ function orcs() {
       <p><span className="race-heading" style={{textDecoration: "underline", color:"blue"}} href="#" id="orctooltip">Orcs</span>: Orc culture 
         is violent and brutal, and very similar to what is outlined in the books. Orc tribes dominate parts of the frontier, and are
         a threat to any who venture too far off the beaten path.  Orcs worship the savage spirits of ancestors, and orc clerics 
-        harness these chaotic spirits to use their powers to smite those who would oppose the orcs.
+        harness these chaotic spirits to use their powers to kill those who would oppose the orcs.  
       </p>
       <p><span className="race-heading">Half-Orcs</span>: 
         Decedents of humans who have interbred or been interbred with orcs.  Most half-orcs are of Tarok ancestry as those 

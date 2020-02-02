@@ -24,21 +24,22 @@ const OosularHome = () => {
           For over three generations of men peace and prosperity spread across the lands.  There were bad years of course, but overall crops prospered, towns sprung up, 
           kingdoms expanded, and cities grew.  Eventually expansion and growing populations took its toll, and as tensions flared when borders were 
           disputed, and the armies of the ruling cities skirmished here and there.  The three great human cities of the region: 
-          Zlago, Vrentae, and Xares, had a fragile truce that had lasted for decades.  But many believed it was only a matter of time before open war broke 
-          out and shattered the last 110 years of peace.
+          Kiron, Vrentae, and Isensall, had a fragile truce that had lasted for decades.  But many believed it was only a matter of time before 
+          open war broke out and shattered the last 110 years of peace.
         </p>
         <p>
           The machinations of nobility within the courts of the great cities were little more than passing gossip and rumor on the frontier, however.  
-          On the eastern most edge of the civilized west the influence of the three great cities was tenuous at best. Few cared about what perfumed nobles
-          wanted, for the frontier was a rugged placed where only the strong and cunning survived and prospered, and your worth
-          was proven (for the most part) by what you did, not by whose blood was in your veins.
+          On the eastern most edge of the civilized west the influence of the three great cities was tenuous at best. Few cared about what the
+          nobles of the western courts wanted, for the frontier was a rugged placed where only the strong and cunning survived and prospered, 
+          and your worth was proven (for the most part) by what you did, not by whose blood was in your veins.  ...of course, most of the 
+          keeps of the frontier were ruled over by blood.
         </p>
         <p>
           Lesser nobles, knights, and other minor royalty who were either recklessly ambitious or outcast from the prestigious courts of the west, 
-          owned and lorded over the tiny fiefdoms on the frontier.  From those fiefdoms grew the keeps that protected the west from what lied beyond.
-          These rulers staked out claims on soil made rich by the bones of the peoples who
-          lived in the great empires of the past.  Lands that were once held by the tribes of the Kaza-Groth who fought against the Nokoyan war machine.
-          Lands that had been stalked by the Murn'Ator in search of any infidels within the cities of the nine Kingdoms of 
+          owned and lorded over the tiny fiefdoms on the frontier.  From those fiefdoms grew the keeps that protected the west from what lie beyond.
+          These rulers staked out claims on soil made rich by history and the bones of ancestors.  Lands that were once held by the tribes 
+          of the Kaza-Groth who fought against the Nokoyan war machine.
+          Before that, the lands had been stalked by the Murn'Ator in search of infidels within the cities of the nine Kingdoms of 
           Kannamos.  The last of the "true" dragons flew the skys above these very lands many centuries
           before that, rising on currents of air blowing over the even then ancient tombs of the half-demon sorcerers of the Blood Empire.
         </p>
@@ -56,10 +57,10 @@ const OosularHome = () => {
           keep an eye on their coin purse, and their back.  But such threats do little to dissuade those that do make the trip to the east.
         </p>
         <p>
-          In a caravan to Oronburn, a place on the frontier sometimes referred to as "The Last Haven", travelers are huddled against the pouring rain in the back 
-          of an open cart.  Driven by an old dwarf and his two misshapen beasts of burden, the travelers felt every rock and hole the wagon rolled over.  
-          The travelers looked east past the dwarf and his beasts, and towards the hopes of finding fame, fortune, 
-          or just a chance to start a new life on the frontier.
+          In a caravan to Oronburn, a place on the frontier sometimes referred to as "The Last Haven", travelers are huddled against the 
+          pouring rain in the back of an open cart.  Driven by an old dwarf and his two misshapen beasts of burden, the travelers 
+          felt every rock and hole the wagon rolled over.  They looked east past the dwarf and his beasts, and towards the hopes 
+          of finding fame, fortune, or just a chance to start a new life on the frontier.
         </p>
       </Container>
     </div>

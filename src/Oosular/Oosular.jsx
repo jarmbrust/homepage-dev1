@@ -18,9 +18,11 @@ import Moons from './Moons';
 import Maps from './Maps';
 import OosularHome from './OosularHome';
 import Races from './Races';
+import Mythos from './Mythos';
 
-const Oosular = (props) => {
+const Oosular = () => {
   const pcRaces = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Goblinoid', 'Lizardfolk', 'Yaun-Ti', 'Orc'];
+  const mythos = ["The Cosmos", "Gods", "Angels", "Demons"];
 
   return (
     <div className="oosular-background">
@@ -38,11 +40,20 @@ const Oosular = (props) => {
                   <NavLinkRS tag={NavLink} to="/oosular/moons" exact>Lunar Calendar</NavLinkRS>
                 </NavItem>
                 <NavItem>
-                  <Navbar className="nav-link" color='faded' expand='md' id="toggler">Peoples</Navbar>
-                  <UncontrolledCollapse toggler="#toggler">
+                  <Navbar className="nav-link" color='faded' expand='md' id="race-toggler">Peoples</Navbar>
+                  <UncontrolledCollapse toggler="#race-toggler">
                     { 
-                      pcRaces.map(race =>
-                      <NavLinkRS className="sub-link" tag={NavLink} to={`/oosular/peoples/${race}`} exact>{race}</NavLinkRS>
+                      pcRaces.map((race, r) =>
+                      <NavLinkRS className="sub-link" key={r} tag={NavLink} to={`/oosular/peoples/${race}`} exact>{race}</NavLinkRS>
+                    )}
+                  </UncontrolledCollapse>
+                </NavItem>
+                <NavItem>
+                  <Navbar className="nav-link" color='faded' expand='md' id="mythos-toggler">Mythos</Navbar>
+                  <UncontrolledCollapse toggler="#mythos-toggler">
+                    { 
+                      mythos.map((myth, m) =>
+                      <NavLinkRS className="sub-link" key={m} tag={NavLink} to={`/oosular/peoples/${myth}`} exact>{myth}</NavLinkRS>
                     )}
                   </UncontrolledCollapse>
                 </NavItem>
@@ -54,8 +65,11 @@ const Oosular = (props) => {
           <Route path="/oosular/moons" component={Moons} />
           <Route path="/oosular/map" exact component={Maps} />
           { 
-            pcRaces.map(race =>
-            <Route path={`/oosular/peoples/${race}`} exact component={() => <Races race={race}/>}/>
+            pcRaces.map((race, r) =>
+            <Route path={`/oosular/peoples/${race}`} key={r}  exact component={() => <Races race={race}/>}/>
+          )}
+          { mythos.map((myth, m) => 
+            <Route path={`/oosular/peoples/${myth}`} key={m}  exact component={() => <Mythos myth={myth}/>}/>
           )}
         </Switch>
       </Router>

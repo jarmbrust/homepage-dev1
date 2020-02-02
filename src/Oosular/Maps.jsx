@@ -20,7 +20,7 @@ const Maps = () => {
     <div className="oosular-background">
       <Container className="col-md-6">
         <h2>Maps of Oosular</h2>
-        <p>Map of the eastern frontier to Odonburn.</p>
+        <p>Map of the eastern frontier to Oronburn.</p>
         <img className="frontier-map1" src={FrontierMap1} alt="Frontier Map Intro" width="536.4" height="446.4"></img> 
         <Button onClick={toggle}>Larger Map</Button>
         <Modal isOpen={modal} toggle={toggle} className="east-frontier" size="lg" style={{maxWidth: '1250px', width: '100%'}}>

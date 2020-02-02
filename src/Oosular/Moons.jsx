@@ -17,7 +17,7 @@ const Moons = () => {
           This is considered the last day of the year, and a day that the spirits of the dead freely walk the world.
         </p>
         <p>
-          Current date is the __ day of ____ in the year 1395 of the founding of Nokoya, otherwise known as 2573 of the Fourth Age of the world.
+          Current date is the __ day of ____ in the year 1395 of the founding of Nokoya, otherwise known as 2273 of the Fourth Age of the world.
         </p>
         <Table bordered hover dark className="table-moon">
           <caption>The Nine Lunar Months (+1 day)</caption>
@@ -31,31 +31,31 @@ const Moons = () => {
           <tr>
             <td>Ouros</td>
             <td>40</td>
-            <td>Day of Rebirth (1st), Feast of the New Year (12th)</td>
+            <td>Day of Rebirth (1st), Feast of the New Year (12th), </td>
             <td></td>
           </tr>
           <tr>
             <td>Darnu</td>
             <td>37</td>
-            <td>Lover's Day (6th), The founding of Aeso (18th, Aeso only), The Fall of Gondus (35th)</td>
+            <td>Lover's Day (6th), The founding of Zlago (18th, Zlago only), The Fall of Gondus (35th)</td>
             <td></td>
           </tr>
           <tr>
             <td>Yovo</td>
             <td>42</td>
-            <td>Festival of Fertility (3rd), Holy Day of Sann (8th), Blessings of the Trinity (Nokos religion, 40th)</td>
+            <td>Festival of Fertility (3rd), Holy Day of Tornoc (8th), Blessings of the Trinity (40th)</td>
             <td></td>
           </tr>
           <tr>
             <td>Quess</td>
             <td>41</td>
-            <td>Day of the Dragons (21st), Birthday of King Teotu of Aeso (29th)</td>
+            <td>Day of the Dragons (21st), Birthday of King Teotu of Zlago (29th)</td>
             <td></td>
           </tr>
           <tr>
             <td>Marrado</td>
             <td>35</td>
-            <td>tbd</td>
+            <td>Founding of the Nokoyan Empire (7th)</td>
             <td></td>
           </tr>
           <tr>
@@ -94,7 +94,7 @@ const Moons = () => {
           of those who died during the year travel to their rest in the lands of Galuula.  Others hold that the 
           day is simply a day where all the "normal" moons are far enough away from the world that their life-giving presence leaves all living
           creatures with a sense of unease.  Whatever the individual's belief, people of various cultures revere this day, which is often
-          referred to as the Night of Souls.</p>
+          referred to as the Day of Darkness and Night of Souls.</p>
       </Container>
     </div>
   );

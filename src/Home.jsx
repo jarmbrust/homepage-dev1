@@ -16,9 +16,9 @@ class Home extends Component {
             <h1>Welcome to JamesArmbrust.dev!</h1>
             <p>Hello.</p>
             <p>
-              This site is a work in progress in general, I am still trying to determine what to show on most of the pages.
-              I am mostly using it at this point to host the realm of Oosular, my D&D homebrew campagne and to
-              practice some of my React skills.
+              This site is a work in progress and I am still trying to determine what to show on most of the pages.
+              Originally I built it to practice my React skills, however, right now it is mostly a showcase for my
+              D&D homebrew campaign.  But in time it will expand to more uses I am sure.
             </p>
             <p>
               More will come soon...

@@ -27,9 +27,6 @@
     -webkit-border-radius: 6px 6px 6px 6px;
     border-collapse: separate;
   }
-  #race-dropdown {
-    margin-bottom: 10px;
-  }
   .race-description {
     margin: 20px;
   }
@@ -48,7 +45,6 @@
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 
   .tooltiptext {
     visibility: hidden;
@@ -103,6 +99,7 @@
     font-weight: 500;
     margin-right: 4px;
     color: #999;
+    cursor: pointer;
   }
   
   .nav-link.active {
